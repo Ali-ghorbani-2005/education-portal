@@ -1,11 +1,12 @@
 import './App.css'
+import Index from './router'
 
 function App() {
 
   return (
     <>
 
-      <p className='bg-red-500'>sksl</p>
+     <Index/>
 
     </>
   )
