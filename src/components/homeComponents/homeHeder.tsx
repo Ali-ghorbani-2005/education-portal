@@ -11,7 +11,7 @@ export default function HomeHeder() {
             <div className="relative overflow-hidden h-[570px]">
                 <img src="imgs/icons/bg-lap.jpeg" alt="Background" className="absolute inset-0 object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div className="relative z-10 flex gap-5 ml-10 mt-6 w-44 h-10 bg-green-600 rounded-lg">
+                <div className="relative ">
                    <AuthenticationButton/>
                 </div>
                 <div className="relative z-10 flex justify-end gap-4 mr-24">
