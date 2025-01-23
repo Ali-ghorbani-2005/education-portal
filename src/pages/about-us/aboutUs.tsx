@@ -2,8 +2,17 @@
 
 export default function AboutUs() {
   return (
-    <div>
-      <p>aboutUs</p>
-    </div>
+<>
+
+<div>
+
+<div>
+  <p>aqsqssww</p>
+</div>
+
+</div>
+
+
+</>
   )
 }

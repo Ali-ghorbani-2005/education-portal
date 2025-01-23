@@ -14,7 +14,7 @@ export default function HomeHeder() {
                 <div className="relative ">
                    <AuthenticationButton/>
                 </div>
-                <div className="relative z-10 flex justify-end gap-4 mr-24">
+                <div className="relative z-10 flex justify-end gap-4 mr-24 text-white">
                   <CourseNavigation/>
                 </div> 
                 <div className="relative flex justify-center items-center mt-10">
