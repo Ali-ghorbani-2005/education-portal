@@ -15,7 +15,7 @@ export default function Communication() {
         <>
             <div>
                 <div>
-                    <button onClick={openModal}>باز کردن</button>
+                    <button onClick={openModal} className='bg-blue-500 rounded-full w-12 h-12 flex justify-center items-center fixed'><img src="imgs/icons/message.png" className='w-10 ' alt="" /></button>
                 </div>
                 {isOpen && (
                     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
