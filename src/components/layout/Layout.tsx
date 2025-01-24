@@ -1,19 +1,32 @@
-import { Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import LayoutAuthentication from './layoutAuthentication';
+
+
+
 
 export default function Layout() {
     return (
         <>
 
-            <div>
-
-             <button>aaasamskamk</button>
+            <div> 
 
 
-                <main>
-                    <div className='mt-52'>
-                        <Outlet />
-                    </div>
-                </main>
+               <div className='-mt-4 ml-4'>
+                
+                <LayoutAuthentication/>
+
+               </div>
+
+
+
+                <div>
+
+                    <main>
+                        <div className=''>
+                            <Outlet />
+                        </div>
+                    </main>
+                </div>
 
             </div>
 

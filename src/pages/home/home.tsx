@@ -1,10 +1,20 @@
+import Communication from "../../components/Communication/Communication";
 import HomeHeder from "../../components/homeComponents/homeHeder";
 
 
 export default function Home() {
-  return (
+  return ( 
+    <>
     <div>
-      <HomeHeder/>
-    </div>
+      <HomeHeder/> 
+    </div>  
+    <div>
+
+      <Communication/>
+      
+      </div> 
+    </>
+
+   
   )
 }
