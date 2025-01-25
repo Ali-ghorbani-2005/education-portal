@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import LayoutAuthentication from './layoutAuthentication';
 import LayoutShearch from './layoutShearch';
 import CourseNavigation from '../homeComponents/CourseNavigation';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 
 
@@ -12,11 +13,15 @@ export default function Layout() {
 
             <div className=' h-20 shadow-sm shadow-gray-400'>
 
-                <div className='flex gap-32'>
+                <div className='flex gap-20'>
                     <div className='-mt-4 ml-4 '>
 
                         <LayoutAuthentication />
 
+                    </div>  
+
+                    <div>
+                        <ThemeSwitcher/>
                     </div>
 
                     <div className='mt-5'>
@@ -30,7 +35,7 @@ export default function Layout() {
                 </div>
             </div>
 
-            <div className='bg-gray-50 mt-5'>
+            <div className='bg-gray-100 mt-5'>
 
                 <main>
                     <div className=''>

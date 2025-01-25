@@ -26,7 +26,7 @@ export default function Brand() {
       <div className="flex items-center">
       <div className="relative h-16 w-16">
         <div className="absolute top-0 left-0 h-16 w-16 bg-blue-500 rounded-lg transform rotate-45"></div>
-        <div className="absolute top-1 left-1 h-16 w-16 bg-white rounded-lg transform rotate-45"></div>
+        <div className="absolute top-1 left-1 h-16 w-16 bg-gray-400 rounded-lg transform rotate-45"></div>
       </div>
       <div className="ml-4">
         <h1 className="text-2xl font-bold text-blue-600">دانش پلاس</h1>
