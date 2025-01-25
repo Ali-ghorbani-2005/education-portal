@@ -1,3 +1,4 @@
+import MessageBox from "../messageBox/messageBox";
 import AuthenticationButton from "./authenticationButton";
 import Brand from "./brand";
 import CourseNavigation from "./CourseNavigation";
@@ -29,7 +30,8 @@ export default function HomeHeder() {
                 <div className="relative flex justify-center items-center">
                     <StatisticsCard/>
                 </div>
-                <div>
+                <div> 
+                    <MessageBox/>
                     
                 </div>
             </div>
