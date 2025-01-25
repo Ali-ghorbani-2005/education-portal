@@ -21,25 +21,47 @@ const MessageBox: React.FC = () => {
     return (
         <>
             {isVisible && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                    <div className="bg-white w-96 p-6 rounded-lg shadow-lg relative transform transition-transform duration-300 animate-slide-up">
-                        <p className="mb-4 text-center text-xl font-semibold">به وب سایت دانش پلاس خوش آمدید </p>
+                // <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                //     <div className="bg-white w-96 p-6 rounded-lg shadow-lg relative transform transition-transform duration-300 animate-slide-up">
+                //         <p className="mb-4 text-center text-xl font-semibold">به وب سایت دانش پلاس خوش آمدید </p>
 
-                        <p className="mb-5 text-center text-lg font-semibold ">لطفا ابتدا وارد شوید </p>
+                //         <p className="mb-5 text-center text-lg font-semibold ">لطفا ابتدا وارد شوید </p>
+
+                //         <button
+                //             onClick={handleClose}
+                //             className="absolute top-2 right-2 text-xl"
+                //         >
+                //             ×
+                //         </button>
+                //         <div className="flex space-x-2 justify-center items-center">
+                //             <Link to='/login'>
+                //                 <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                //                     ورود
+                //                 </button>
+                //             </Link>
+
+                //         </div>
+                //     </div>
+                // </div> 
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                    <div className="bg-white w-96 p-6 rounded-lg shadow-2xl relative transform transition-transform duration-300 animate-slide-up">
+                        <p className="mb-4 text-center text-2xl font-bold text-gray-800">به وب‌سایت دانش پلاس خوش آمدید</p>
+
+                        <p className="mb-5 text-center text-lg text-gray-600">لطفاً ابتدا وارد شوید</p>
 
                         <button
                             onClick={handleClose}
-                            className="absolute top-2 right-2 text-xl"
+                            className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl"
                         >
                             ×
                         </button>
+
                         <div className="flex space-x-2 justify-center items-center">
                             <Link to='/login'>
-                                <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                                <button className="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-200">
                                     ورود
                                 </button>
                             </Link>
-
                         </div>
                     </div>
                 </div>

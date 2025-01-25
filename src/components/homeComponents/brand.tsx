@@ -5,7 +5,7 @@ export default function Brand() {
     <>
 
       {/* <div>
-    <img src="imgs/brand/brand-5.jpg" alt="" className="w-20 rounded-full" />
+    <img src="imgs/brand/brand-5.jpeg" alt="" className="w-20 h-20 rounded-full" />
   </div> */}
       {/* <div className="flex items-center space-x-2">
       <div className="bg-sky-500 text-white p-2 rounded-full">
