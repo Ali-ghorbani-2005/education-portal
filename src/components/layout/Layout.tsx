@@ -3,6 +3,7 @@ import LayoutAuthentication from './layoutAuthentication';
 import LayoutShearch from './layoutShearch';
 import CourseNavigation from '../homeComponents/CourseNavigation';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import Footer from '../footer/footer';
 
 
 
@@ -35,14 +36,20 @@ export default function Layout() {
                 </div>
             </div>
 
-            <div className='bg-gray-100 mt-5'>
+            <div className='bg-gray-200 mt-5 h-[800px]'>
 
                 <main>
                     <div className=''>
                         <Outlet />
                     </div>
-                </main>
-            </div>
+                </main> 
+               
+            </div> 
+
+            <div className='mt-5'>
+                <Footer/>  
+                .
+                </div> 
 
         </>
     )
