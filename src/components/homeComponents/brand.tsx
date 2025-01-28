@@ -5,7 +5,7 @@ export default function Brand() {
     <>
 
       <div>
-    <img src="imgs/brand/brand-2.jpeg" alt="" className="w-24 h-20 rounded-md" />
+      <p  className="font-gulzar text-3xl text-blue-500">دانش پلاس</p>
   </div>
       {/* <div className="flex items-center space-x-2">
       <div className="bg-sky-500 text-white p-2 rounded-full">

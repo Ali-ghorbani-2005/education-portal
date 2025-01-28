@@ -6,6 +6,7 @@ import Login from '../pages/authentication/login';
 import SignUp from '../pages/authentication/signUp';
 import AboutUs from '../pages/about-us/aboutUs';
 import Layout from '../components/layout/Layout';
+import Loader from '../components/loader/loader';
 
 
 
@@ -23,7 +24,8 @@ export default function Index() {
                 </Route> 
 
                 <Route path='/login' element={<Login />} />
-                <Route path='/signUp' element={<SignUp />} /> 
+                <Route path='/signUp' element={<SignUp />} />  
+                <Route path='/Loader' element={<Loader />} />
 
 
 
