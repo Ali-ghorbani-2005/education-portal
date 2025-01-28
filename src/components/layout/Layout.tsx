@@ -8,6 +8,7 @@ import Footer from '../footer/footer';
 
 
 
+
 export default function Layout() {
     return (
         <>
@@ -47,7 +48,7 @@ export default function Layout() {
             </div> 
 
             <div className='mt-5'>
-                <Footer/>  
+               <Footer/>  
                 .
                 </div> 
 

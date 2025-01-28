@@ -4,9 +4,9 @@ export default function Brand() {
   return (
     <>
 
-      {/* <div>
-    <img src="imgs/brand/brand-5.jpeg" alt="" className="w-20 h-20 rounded-full" />
-  </div> */}
+      <div>
+    <img src="imgs/brand/brand-2.jpeg" alt="" className="w-24 h-20 rounded-md" />
+  </div>
       {/* <div className="flex items-center space-x-2">
       <div className="bg-sky-500 text-white p-2 rounded-full">
         🎓
@@ -23,7 +23,7 @@ export default function Brand() {
       </div>
     </div> */}
 
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
       <div className="relative h-16 w-16">
         <div className="absolute top-0 left-0 h-16 w-16 bg-blue-500 rounded-lg transform rotate-45"></div>
         <div className="absolute top-1 left-1 h-16 w-16 bg-gray-400 rounded-lg transform rotate-45"></div>
@@ -32,7 +32,7 @@ export default function Brand() {
         <h1 className="text-2xl font-bold text-blue-600">دانش پلاس</h1>
         <p className="text-sm text-gray-500">توضیحات لوگو</p>
       </div>
-    </div>
+    </div> */}
 
   
 
