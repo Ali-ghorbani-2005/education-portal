@@ -1,5 +1,6 @@
 import Communication from "../../components/Communication/Communication";
 import HomeHeder from "../../components/homeComponents/homeHeder";
+import FetchProduct from "../../components/productComponent/fetchProduct";
 
 
 export default function Home() {
@@ -12,7 +13,11 @@ export default function Home() {
 
       <Communication/>
       
-      </div> 
+      </div>  
+
+      <div>
+        <FetchProduct/>
+      </div>
     </>
 
    

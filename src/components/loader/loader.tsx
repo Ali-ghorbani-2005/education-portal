@@ -4,16 +4,11 @@ import './loader.css'
 export default function Loader() {
     return (
         <>
-            {/* <div className="loader">
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-            <p>در حال بارگذاری...</p>
-        </div> */}
-                   
-                 <div className='flex justify-center items-center mt-20'>
-                 <p  className="font-gulzar text-7xl text-blue-500">دانش پلاس</p>
-                 </div>
+
+
+            <div className='flex justify-center items-center mt-20'>
+                <p className="font-gulzar text-7xl text-blue-500">دانش پلاس</p>
+            </div>
 
             <div className="loader">
                 <div className="dot"></div>
@@ -22,6 +17,17 @@ export default function Loader() {
                 
                 <p className='text-3xl font-lato'>در حال بارگذاری</p>
             </div>
+            {/* <div className="loader">
+                <div className="outer-circle">
+                    <div className="inner-circle"></div>
+                </div>
+                <p className='text-3xl font-lato'>در حال بارگذاری</p>
+            </div> */}
+
+            {/* <div className="loader">
+                <div className="spinner"></div>
+                <p className='text-2xl font-lato'>در حال بارگذاری...</p>
+            </div> */}
         </>
     )
 }
