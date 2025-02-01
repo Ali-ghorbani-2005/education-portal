@@ -35,10 +35,12 @@ export default function FetchProduct() {
     <>
      
    
-
-     <div>
-      {data.map(data=>(
-         <ProductCard  key={data.id} {...data} />
+     <div className='mt-10'> <p className="text-right mr-10 text-3xl text-gray-700 font-katibeh">راهی به سوی موفقیت شما</p></div>
+     <div className='grid grid-cols-4 gap-4 p-4' > 
+      {data.map(data=>( 
+        <div  >
+         <ProductCard  key={data.id} {...data} /> 
+         </div>
       ))}
      </div>
 

@@ -7,7 +7,8 @@ export default {
     extend: {
       fontFamily: {
         gulzar: ['Gulzar', 'cursive'],
-        lato: ['Lato', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'], 
+        katibeh:['Katibeh']
       },
     },
   },

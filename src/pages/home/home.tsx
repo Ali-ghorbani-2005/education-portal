@@ -15,7 +15,7 @@ export default function Home() {
       
       </div>  
 
-      <div>
+      <div className="bg-slate-100">
         <FetchProduct/>
       </div>
     </>
