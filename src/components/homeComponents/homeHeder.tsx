@@ -21,7 +21,7 @@ export default function HomeHeder() {
                   <Brand/>
                 </div>  
                 <div className="relative flex justify-center items-center mt-10">
-                    <p className="text-white text-3xl font-semibold">دانش پلاس, نخستین قدم برای تبدیل شدن به یک برنامه‌نویس</p> 
+                    <p className="text-white text-3xl font-gulzar">دانش پلاس, نخستین قدم برای تبدیل شدن به یک برنامه‌نویس</p> 
                 </div>   
                 <div className="relative flex justify-center items-center mt-20"> 
                     <SerchBox/>

@@ -45,9 +45,9 @@ const MessageBox: React.FC = () => {
                 // </div> 
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
                     <div className="bg-white w-96 p-6 rounded-lg shadow-2xl relative transform transition-transform duration-300 animate-slide-up">
-                        <p className="mb-4 text-center text-2xl font-bold text-gray-800">به وب‌سایت دانش پلاس خوش آمدید</p>
+                        <p className="mb-4 text-center text-2xl font-katibeh text-gray-800">به وب‌سایت دانش پلاس خوش آمدید</p>
 
-                        <p className="mb-5 text-center text-lg text-gray-600">لطفاً ابتدا وارد شوید</p>
+                        <p className="mb-5 text-center font-katibeh text-lg text-gray-600">لطفاً ابتدا وارد شوید</p>
 
                         <button
                             onClick={handleClose}

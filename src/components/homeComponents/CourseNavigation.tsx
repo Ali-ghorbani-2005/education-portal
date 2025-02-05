@@ -24,16 +24,16 @@ export default function CourseNavigation() {
         <>
             <div>
                 <Link to='/about-Us'>
-                    <button className="  font-semibold rounded-lg px-5 py-2">درباره ما</button>
+                    <button className="  font-lato text-lg  rounded-lg px-5 py-2">درباره ما</button>
                 </Link>
-                <button className="  font-semibold rounded-lg px-4 py-2">همه دوره ها</button>
+                <button className="  font-lato rounded-lg text-lg  px-4 py-2">همه دوره ها</button>
 
                 <div className="relative inline-block text-left">
                     <div>
                         <button
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
-                            className="  font-semibold rounded-lg px-4 py-2"
+                            className="  font-lato text-lg rounded-lg px-4 py-2"
                         >
                             دوره های آموزشی
                         </button>
