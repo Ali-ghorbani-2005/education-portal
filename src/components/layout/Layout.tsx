@@ -4,6 +4,7 @@ import LayoutShearch from './layoutShearch';
 import CourseNavigation from '../homeComponents/CourseNavigation';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import Footer from '../footer/footer';
+import Brand from '../homeComponents/brand';
 
 
 
@@ -30,8 +31,9 @@ export default function Layout() {
                         <LayoutShearch />
                     </div>
 
-                    <div className='mt-5 ml-52'>
-                        <CourseNavigation />
+                    <div className='flex mt-5 ml-40'>
+                        <CourseNavigation /> 
+                         <Brand/>
                     </div>
 
                 </div>

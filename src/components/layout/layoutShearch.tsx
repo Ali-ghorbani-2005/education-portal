@@ -22,7 +22,7 @@ export default function LayoutShearch() {
             <div className="flex justify-center">
                 <div className="flex items-center w-full max-w-xs h-12 bg-gray-200 rounded-full overflow-hidden shadow-md">
                     <button className="bg-green-500 w-10 h-10 rounded-full flex justify-center items-center hover:bg-green-600 transition duration-200">
-                        <img src="imgs/icons/search.png" alt="Search" className="w-6" />
+                        <img src="/imgs/icons/search.png" alt="Search" className="w-6" />
                     </button>
                     <input
                         type="text"

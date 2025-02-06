@@ -111,23 +111,23 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row justify-between mt-8">
             <div className="flex items-center mb-4 md:mb-0">
-              <img src="imgs/icons/email.png" className="w-6 mr-2" alt="Email" />
-              <p className="text-gray-500">info@daneshplus.com</p>
+              <img src="/imgs/icons/email.png" className="w-6 mr-2" alt="Email" />
+              <p className="text-gray-500 font-lato">info@daneshplus.com</p>
             </div>
             <div className="flex items-center mb-4 md:mb-0">
-              <img src="imgs/icons/telegram-2.png" className="w-6 mr-2" alt="Telegram" />
-              <p className="text-gray-500" >02191030926</p>
+              <img src="/imgs/icons/telegram-2.png" className="w-6 mr-2" alt="Telegram" />
+              <p className="text-gray-500 font-lato" >02191030926</p>
             </div>
             <div className="flex items-center">
-              <img src="imgs/icons/phone.png" className="w-6 mr-2" alt="Phone" />
-              <p className="text-gray-500">02191030926</p>
+              <img src="/imgs/icons/phone.png" className="w-6 mr-2" alt="Phone" />
+              <p className="text-gray-500 font-lato">02191030926</p>
             </div>
           </div> 
 
           <div className="border-b border-gray-400 mt-5"></div>
 
           <div className="mt-10 text-right">
-            <p className="text-2xl font-semibold">درباره دانش پلاس</p>
+            <p className="text-2xl font-semibold font-lato">درباره دانش پلاس</p>
             <p className="font-lato text-[18px] text-center text-slate-500 mt-4">
               شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی، با خیال راحت و بدون استرس میتونی از مسیر لذت ببری. ما در سبزلرن، توی سفر به دنیای برنامه نویسی کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات مون لذت ببریم.
             </p>
@@ -141,16 +141,16 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row justify-around mt-10">
             <div className="text-center mb-8">
-              <p className="text-2xl font-semibold">دوره های پرطرفدار</p>
-              <button className="mt-5 text-lg text-slate-500 font-semibold mr-5 hover:text-blue-600">آموزش پایتون</button>
-              <button className="mt-5 text-lg text-slate-500 font-semibold hover:text-blue-600">HTML آموزش  </button>
-              <button className="mt-5 text-lg text-slate-500 font-semibold ml-5 hover:text-blue-600">CSS  آموزش</button>
+              <p className="text-2xl  font-lato">دوره های پرطرفدار</p>
+              <button className="mt-5 text-lg text-slate-500 font-lato mr-5 hover:text-blue-600">آموزش پایتون</button>
+              <button className="mt-5 text-lg text-slate-500 font-lato hover:text-blue-600">HTML آموزش  </button>
+              <button className="mt-5 text-lg text-slate-500 font-lato ml-5 hover:text-blue-600">CSS  آموزش</button>
             </div>
             <div className="text-center mb-8">
-              <p className="text-2xl font-semibold ">دسترسی سریع</p>
-              <button className="mt-5 text-lg text-slate-500 font-semibold mr-5 hover:text-blue-600">قوانین و مقررات</button>
-              <button className="mt-5 text-lg text-slate-500 font-semibold  hover:text-blue-600">ارسال تیکت</button>
-              <button className="mt-5 text-lg text-slate-500 font-semibold ml-5 hover:text-blue-600">همه دوره‌ها</button>
+              <p className="text-2xl font-lato ">دسترسی سریع</p>
+              <button className="mt-5 text-lg text-slate-500 font-lato mr-5 hover:text-blue-600">قوانین و مقررات</button>
+              <button className="mt-5 text-lg text-slate-500 font-lato hover:text-blue-600">ارسال تیکت</button>
+              <button className="mt-5 text-lg text-slate-500 font-lato ml-5 hover:text-blue-600">همه دوره‌ها</button>
             </div>
           </div>
         </div>
