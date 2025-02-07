@@ -47,7 +47,7 @@
 //         return <div>Error: {error}</div>;
 //     } 
 
-     
+
 
 //     return (
 //         <div className="mt-10">
@@ -75,6 +75,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchData } from '../../services/fetchData';
+import CourseProgress from '../../components/productComponent/courseProgress';
 
 interface Product {
     id: number; // یا string (بسته به نوع آیدی شما)
@@ -122,18 +123,99 @@ export default function Information() {
 
     if (error) {
         return <div>Error: {error}</div>;
-    } 
+    }
 
     return (
         <div className="mt-10">
             {product && (
-                <div className="product-detail bg-white shadow-lg rounded-lg p-6">
-                    <h2 className="text-2xl font-semibold">{product.product}</h2>
-                    <img src={product.img} alt={product.product} className="w-full h-64 object-cover rounded-lg" />
-                    <p className="text-lg mt-4">Teacher: {product.teacher}</p>
-                    <p className="text-lg mt-4">Time: {product.time}</p>
+                <div className="product-detail   rounded-lg p-6">
+                    <h2 className="text-4xl font-lato text-right">{product.product}</h2>
+                    <div className='flex '>
+                        <img src={product.img} alt={product.product} className="w-[650px] h-80 object-cover rounded-lg mt-5" />
+                        <p className="mt-4 text-right text-2xl text-gray-500 font-lato">{product.information}</p>
+                    </div>
+
                     <p className="text-lg font-bold mt-4">Price: {product.price} تومان</p>
-                    <p className="mt-4">{product.information}</p>
+                       
+
+                       <div className='flex gap-80'>
+
+                       <div className='mt-10'>
+                        <CourseProgress/>
+                     </div>
+
+                     <div className='flex justify-end '>
+                    <div className='flex gap-10 flex-wrap p-4 w-[600px]'>
+
+                        <div className=' bg-white shadow-lg  w-60 h-20 mt-10 rounded-lg flex '>
+
+                            <div>
+                                <p className='ml-20 mt-2 text-2xl font-lato '>نوع مشاهده</p>
+                                <p className="text-sm mt-3 ml-12  "> ویدیو</p>
+                            </div>
+                            <div>
+                                <img src="/imgs/icons/camera.png" className='w-12 h-12 ml-12 mt-3' alt="" />
+                            </div>
+                        </div>
+
+                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
+
+                            <div>
+                                <p className='ml-20 mt-2 text-2xl font-lato '> زمان</p>
+                                <p className="text-sm mt-3 ml-12  "> {product.time}</p>
+                            </div>
+                            <div>
+                                <img src="/imgs/icons/clock-2.png" className='w-12 h-12 ml-12 mt-3' alt="" />
+                            </div>
+                        </div>
+
+
+
+
+                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
+
+                            <div>
+                                <p className='ml-14 mt-2 text-2xl font-lato '>بروزرسانی</p>
+                                <p className="text-sm mt-3 ml-12  "> 1403/10/30</p>
+                            </div>
+                            <div>
+                                <img src="/imgs/icons/calendar.png" className='w-12 h-12 ml-12 mt-3' alt="" />
+                            </div>
+                        </div>
+
+
+
+
+                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
+
+                            <div>
+                                <p className='ml-20 mt-2 text-2xl font-lato '>مدرس</p>
+                                <p className="text-sm mt-3 ml-12  "> {product.teacher}</p>
+                            </div>
+                            <div>
+                                <img src="/imgs/icons/school.png" className='w-12 h-12 ml-12 mt-3' alt="" />
+                            </div>
+                        </div>
+                        {/* <div>
+                    <p className="text-lg mt-4">Time: {product.time}</p> 
+                    </div>   */}
+
+                    </div> 
+                    </div>   
+
+
+                    </div>
+
+
+                    <div>
+                     
+                    
+
+
+                    </div>
+
+
+
                 </div>
             )}
         </div>

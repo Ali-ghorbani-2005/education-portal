@@ -39,7 +39,7 @@ export default function Layout() {
                 </div>
             </div>
 
-            <div className='bg-gray-200 mt-5 h-[800px]'>
+            <div className='bg-gray-100 mt-5 h-[800px]'>
 
                 <main>
                     <div className=''>
