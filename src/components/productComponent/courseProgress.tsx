@@ -3,8 +3,8 @@
 export default function CourseProgress() {
   return (
     <>
-    
-    <div>
+
+      {/* <div>
       
       <div className=" bg-white shadow-lg w-[450px] h-48 rounded-xl">
          
@@ -43,7 +43,43 @@ export default function CourseProgress() {
       </div>
 
     </div>
-    
+     */}
+
+      <div className="bg-white shadow-lg w-[450px] h-64 rounded-xl p-6 mt-5">
+
+        <div className="flex justify-between mb-4">
+
+          <div className="bg-slate-200 w-44 h-24 rounded-lg flex flex-col items-center p-2">
+            <div className="flex items-center mb-1">
+              <p className="text-2xl font-lato">دانشجو</p>
+              <img src="/imgs/icons/users-2.png" className="w-12 ml-2" alt="Students" />
+            </div>
+            <p className="text-lg font-lato text-gray-500">155</p>
+          </div>
+
+          <div className="bg-slate-200 w-44 h-24 rounded-lg flex flex-col items-center p-2">
+            <div className="flex items-center mb-1">
+              <p className="text-2xl font-lato">رضایت</p>
+              <img src="/imgs/icons/star.png" className="w-12 ml-2" alt="Satisfaction" />
+            </div>
+            <p className="text-lg font-lato text-gray-500">5.0</p>
+          </div>
+
+        </div>
+
+        <div className="mt-4">
+          <p className="font-bold text-center">میزان رضایت کلی</p>
+          <p className="ml-3 font-bold">100</p>
+
+          <div className="bg-green-600 h-3 rounded-full w-full mt-2">
+            <div className="bg-yellow-300 h-3 rounded-full w-1/2"></div> 
+          </div>
+
+        </div>
+
+      </div>
+
+
     </>
   )
 }

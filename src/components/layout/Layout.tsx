@@ -39,7 +39,7 @@ export default function Layout() {
                 </div>
             </div>
 
-            <div className='bg-gray-100 mt-5 h-[800px]'>
+            <div className='bg-gray-100  h-full'>
 
                 <main>
                     <div className=''>
@@ -49,7 +49,7 @@ export default function Layout() {
                
             </div> 
 
-            <div className='mt-5'>
+            <div className=''>
                <Footer/>  
                 .
                 </div> 

@@ -130,86 +130,80 @@ export default function Information() {
             {product && (
                 <div className="product-detail   rounded-lg p-6">
                     <h2 className="text-4xl font-lato text-right">{product.product}</h2>
-                    <div className='flex '>
-                        <img src={product.img} alt={product.product} className="w-[650px] h-80 object-cover rounded-lg mt-5" />
-                        <p className="mt-4 text-right text-2xl text-gray-500 font-lato">{product.information}</p>
+                    <div className=''>
+                        <div className='flex'>
+                            <img src={product.img} alt={product.product} className="w-[650px] h-80 object-cover rounded-lg mt-5 ml-7" />
+                            <div className='w-[450px] ml-52 mt-4 '>
+                                <p className="mt-4 text-right text-xl text-gray-600 font-lato">{product.information}</p>
+                            </div>
+                        </div>
+
+                        <div className='flex gap-3 justify-center items-center ml-[500px] -mt-20'>
+                            <p className='font-katibeh text-2xl mt-2'>تومان</p>   <p className="text-3xl font-lato mt-4"> {product.price} </p>
+
+                            <button className='bg-green-500 text-white w-64 h-12 rounded-xl ml-10 shadow-lg transition-transform transform hover:scale-105 hover:bg-green-600'>
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
                     </div>
 
-                    <p className="text-lg font-bold mt-4">Price: {product.price} تومان</p>
-                       
 
-                       <div className='flex gap-80'>
 
-                       <div className='mt-10'>
-                        <CourseProgress/>
-                     </div>
 
-                     <div className='flex justify-end '>
-                    <div className='flex gap-10 flex-wrap p-4 w-[600px]'>
+                    <div className='flex gap-80'>
 
-                        <div className=' bg-white shadow-lg  w-60 h-20 mt-10 rounded-lg flex '>
-
-                            <div>
-                                <p className='ml-20 mt-2 text-2xl font-lato '>نوع مشاهده</p>
-                                <p className="text-sm mt-3 ml-12  "> ویدیو</p>
-                            </div>
-                            <div>
-                                <img src="/imgs/icons/camera.png" className='w-12 h-12 ml-12 mt-3' alt="" />
-                            </div>
+                        <div className='mt-10'>
+                            <CourseProgress />
                         </div>
 
-                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
+                        <div className='flex justify-end'>
+                            <div className='flex gap-10 flex-wrap p-4 w-[600px]'>
 
-                            <div>
-                                <p className='ml-20 mt-2 text-2xl font-lato '> زمان</p>
-                                <p className="text-sm mt-3 ml-12  "> {product.time}</p>
-                            </div>
-                            <div>
-                                <img src="/imgs/icons/clock-2.png" className='w-12 h-12 ml-12 mt-3' alt="" />
+                                {/* Card for View Type */}
+                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-2xl font-lato'>نوع مشاهده</p>
+                                        <p className="text-sm text-gray-500">ویدیو</p>
+                                    </div>
+                                    <img src="/imgs/icons/camera.png" className='w-12 h-12' alt="View Type Icon" />
+                                </div>
+
+                                {/* Card for Time */}
+                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-2xl font-lato'>زمان</p>
+                                        <p className="text-sm text-gray-500">{product.time}</p>
+                                    </div>
+                                    <img src="/imgs/icons/clock-2.png" className='w-12 h-12' alt="Time Icon" />
+                                </div>
+
+                                {/* Card for Update */}
+                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-2xl font-lato'>بروزرسانی</p>
+                                        <p className="text-sm text-gray-500">1403/10/30</p>
+                                    </div>
+                                    <img src="/imgs/icons/calendar.png" className='w-12 h-12' alt="Update Icon" />
+                                </div>
+
+                                {/* Card for Teacher */}
+                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-2xl font-lato'>مدرس</p>
+                                        <p className="text-sm text-gray-500">{product.teacher}</p>
+                                    </div>
+                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
+                                </div>
                             </div>
                         </div>
-
-
-
-
-                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
-
-                            <div>
-                                <p className='ml-14 mt-2 text-2xl font-lato '>بروزرسانی</p>
-                                <p className="text-sm mt-3 ml-12  "> 1403/10/30</p>
-                            </div>
-                            <div>
-                                <img src="/imgs/icons/calendar.png" className='w-12 h-12 ml-12 mt-3' alt="" />
-                            </div>
-                        </div>
-
-
-
-
-                        <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex '>
-
-                            <div>
-                                <p className='ml-20 mt-2 text-2xl font-lato '>مدرس</p>
-                                <p className="text-sm mt-3 ml-12  "> {product.teacher}</p>
-                            </div>
-                            <div>
-                                <img src="/imgs/icons/school.png" className='w-12 h-12 ml-12 mt-3' alt="" />
-                            </div>
-                        </div>
-                        {/* <div>
-                    <p className="text-lg mt-4">Time: {product.time}</p> 
-                    </div>   */}
-
-                    </div> 
-                    </div>   
 
 
                     </div>
 
 
                     <div>
-                     
-                    
+
+
 
 
                     </div>
