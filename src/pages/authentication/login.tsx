@@ -2,17 +2,26 @@ import './login.css';
 import { useForm } from 'react-hook-form';
 import { loginUser } from '../../services/authenticationServices';
 import { useNavigate } from 'react-router-dom';
+import { useUser } from '../../components/userProfile/context';
+
+
+interface FormData {
+  name: string;
+  password: string;
+}
 
 export default function Login() {
-  const { handleSubmit, register, setError } = useForm();
+  
+  const { handleSubmit, register, setError } = useForm<FormData>();
   const navigate = useNavigate();
+  const { setUser } = useUser();
 
-  const onSubmit = async (data: any) => {
+  const onSubmit = async (data: FormData) => {
     const result = await loginUser(data.name, data.password);
 
     if (result.success) {
-      alert(result.message);
-      navigate('/');  // هدایت به صفحه خانه
+      setUser({ name: data.name }); // ذخیره اطلاعات کاربر
+      navigate('/'); // هدایت به صفحه خانه
     } else {
       setError('name', { type: 'manual', message: result.message });
       setError('password', { type: 'manual', message: result.message });
@@ -71,3 +80,27 @@ export default function Login() {
 </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+// const { handleSubmit, register, setError } = useForm();
+  // const navigate = useNavigate();
+
+  // const onSubmit = async (data: any) => {
+  //   const result = await loginUser(data.name, data.password);
+
+  //   if (result.success) {
+  //     alert(result.message);
+  //     navigate('/');  // هدایت به صفحه خانه
+  //   } else {
+  //     setError('name', { type: 'manual', message: result.message });
+  //     setError('password', { type: 'manual', message: result.message });
+  //   }
+  // }; 

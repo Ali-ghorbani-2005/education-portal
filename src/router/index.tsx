@@ -53,6 +53,7 @@ import AboutUs from '../pages/about-us/aboutUs';
 import Layout from '../components/layout/Layout';
 import Loader from '../components/loader/loader';
 import Information from '../pages/product/informationProduct';
+import UserProfile from '../components/userProfile/userProfile';
 
 export default function Index() {
     return (
@@ -68,7 +69,8 @@ export default function Index() {
 
                 <Route path='/login' element={<Login />} />
                 <Route path='/signUp' element={<SignUp />} />  
-                <Route path='/loader' element={<Loader />} />
+                <Route path='/loader' element={<Loader />} /> 
+                <Route path='/UserProfile' element={<UserProfile />} /> 
             </Routes>
         </BrowserRouter>
     );

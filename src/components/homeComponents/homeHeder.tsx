@@ -1,4 +1,5 @@
 import MessageBox from "../messageBox/messageBox";
+import { useUser } from "../userProfile/context";
 import AuthenticationButton from "./authenticationButton";
 import Brand from "./brand";
 import CourseNavigation from "./CourseNavigation";
@@ -6,7 +7,8 @@ import SerchBox from "./serchBox";
 import StatisticsCard from "./StatisticsCard";
 
 
-export default function HomeHeder() {
+export default function HomeHeder() { 
+    const { user } = useUser();
     return (
         <>
 
@@ -33,6 +35,10 @@ export default function HomeHeder() {
                 <div> 
                     <MessageBox/>
                     
+                </div> 
+
+                <div>
+                <h1>خوش آمدید، {user?.name}</h1> {/* نمایش نام کاربر */}
                 </div>
             </div>
 
