@@ -156,46 +156,121 @@ export default function Information() {
                             <CourseProgress />
                         </div>
 
-                        <div className='flex justify-end'>
-                            <div className='flex gap-10 flex-wrap p-4 w-[600px]'>
+                        {/* <div className='flex justify-end'>
+                            <div className='flex gap-5 flex-wrap p-4 w-[600px] ml-24'>
 
-                                {/* Card for View Type */}
-                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                
+                                <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
-                                        <p className='text-2xl font-lato'>نوع مشاهده</p>
+                                        <p className='text-lg font-lato ml-20 '>نوع مشاهده</p>
+                                        <p className="text-sm text-gray-500 ml-20 ">ویدیو</p>
+                                    </div>
+                                    <img src="/imgs/icons/camera.png" className='w-12 h-12' alt="View Type Icon" />
+                                </div>
+
+                                
+                                <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato ml-14'>مدت زمان دوره</p>
+                                        <p className="text-sm text-gray-500 ml-20"> {product.time}</p>
+                                    </div>
+                                    <img src="/imgs/icons/clock-2.png" className='w-12 h-12' alt="Time Icon" />
+                                </div>
+
+                               
+                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato ml-20'>بروزرسانی</p>
+                                        <p className="text-sm text-gray-500 ml-20">1403/10/30</p>
+                                    </div>
+                                    <img src="/imgs/icons/calendar.png" className='w-12 h-12' alt="Update Icon" />
+                                </div>
+
+                              
+                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato ml-20'>مدرس</p>
+                                        <p className="text-sm text-gray-500 ml-16">{product.teacher}</p>
+                                    </div>
+                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
+                                </div> 
+
+                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato ml-16'>وضعیت دوره</p>
+                                        <p className="text-sm text-gray-500 ml-20">تکمیل</p>
+                                    </div>
+                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
+                                </div> 
+
+                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato ml-24'>پیش نیاز</p>
+                                        <p className="text-sm text-gray-500 ml-24">HTML</p>
+                                    </div>
+                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
+                                </div>
+                            </div>
+                        </div>  */}
+
+
+
+                        <div className='flex justify-center mt-20 -ml-40 '>
+                            <div className='grid grid-cols-3 gap-5 p-4 w-[800px] '>
+
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato'>نوع مشاهده</p>
                                         <p className="text-sm text-gray-500">ویدیو</p>
                                     </div>
                                     <img src="/imgs/icons/camera.png" className='w-12 h-12' alt="View Type Icon" />
                                 </div>
 
-                                {/* Card for Time */}
-                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
-                                        <p className='text-2xl font-lato'>زمان</p>
+                                        <p className='text-lg font-lato'>مدت زمان دوره</p>
                                         <p className="text-sm text-gray-500">{product.time}</p>
                                     </div>
                                     <img src="/imgs/icons/clock-2.png" className='w-12 h-12' alt="Time Icon" />
                                 </div>
 
-                                {/* Card for Update */}
-                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
-                                        <p className='text-2xl font-lato'>بروزرسانی</p>
+                                        <p className='text-lg font-lato'>بروزرسانی</p>
                                         <p className="text-sm text-gray-500">1403/10/30</p>
                                     </div>
                                     <img src="/imgs/icons/calendar.png" className='w-12 h-12' alt="Update Icon" />
                                 </div>
 
-                                {/* Card for Teacher */}
-                                <div className='bg-white shadow-lg w-60 h-28 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
-                                        <p className='text-2xl font-lato'>مدرس</p>
+                                        <p className='text-lg font-lato'>مدرس</p>
                                         <p className="text-sm text-gray-500">{product.teacher}</p>
                                     </div>
                                     <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
                                 </div>
+
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato'>وضعیت دوره</p>
+                                        <p className="text-sm text-gray-500">تکمیل</p>
+                                    </div>
+                                    <img src="/imgs/icons/status.png" className='w-12 h-12' alt="Status Icon" />
+                                </div>
+
+                                <div className='bg-white shadow-lg w-60 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                    <div>
+                                        <p className='text-lg font-lato'>پیش نیاز</p>
+                                        <p className="text-sm text-gray-500">HTML</p>
+                                    </div>
+                                    <img src="/imgs/icons/hourglass.png" className='w-12 h-12' alt="Prerequisite Icon" />
+                                </div>
+
                             </div>
                         </div>
+
+
+
 
 
                     </div>
