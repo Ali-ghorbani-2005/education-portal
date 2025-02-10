@@ -3,6 +3,7 @@ import Footer from "../../components/footer/footer";
 import HomeHeder from "../../components/homeComponents/homeHeder";
 import LearningPathSection from "../../components/learningPathSection/learningPathSection";
 import FetchProduct from "../../components/productComponent/fetchProduct";
+import SliderImg from "../../components/slider/slider";
 
 
 export default function Home() {
@@ -15,7 +16,13 @@ export default function Home() {
 
       <Communication/>
       
-      </div>  
+      </div> 
+
+      <div>
+
+        <SliderImg/>
+        
+        </div>  
 
       <div className="bg-slate-100">
         <FetchProduct/>  
