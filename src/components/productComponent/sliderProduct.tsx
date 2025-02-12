@@ -55,7 +55,7 @@ export default function SliderProduct() {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">محصولات ویژه</h2>
+      <h2 className="text-2xl font-semibold text-right mb-4">دوره های محبوب</h2>
       <Slider {...settings}>
         {products.map(product => (
           <div key={product.id} className="mt-6 mx-4">
