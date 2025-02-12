@@ -16,7 +16,8 @@
       "price": "720,000 ",
       "img": "/imgs/product-imgs/product-1.webp",
       "teacher": "حمیدرضا عبادی",
-      "time": 6
+      "time": 6,
+      "Student": 223
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
       "price": "820,000 ",
       "img": "/imgs/product-imgs/product-2.webp",
       "teacher": "معین باغشیخی",
-      "time": 3
+      "time": 3,
+      "Student": 400
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "price": "1,400,000  ",
       "img": "/imgs/product-imgs/product-3.webp",
       "teacher": "حمیدرضا عبادی",
-      "time": 10
+      "time": 10,
+      "Student": 160
     },
     {
       "id": 4,
@@ -43,7 +46,8 @@
       "price": "700,000  ",
       "img": "/imgs/product-imgs/product-4.webp",
       "teacher": "معین باغشیخی",
-      "time": 20
+      "time": 20,
+      "Student": 340
     },
     {
       "id": 5,
@@ -52,7 +56,8 @@
       "price": "4,000,000   ",
       "img": "/imgs/product-imgs/product-5.webp",
       "teacher": " محمدامین سعیدی راد",
-      "time": 15
+      "time": 15,
+      "Student": 500
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
       "price": "1,600,000   ",
       "img": "/imgs/product-imgs/product-6.webp",
       "teacher": "معین باغشیخی",
-      "time": 12
+      "time": 12,
+      "Student": 200
     },
     {
       "id": 8,
@@ -70,7 +76,8 @@
       "price": " 3,200,000  ",
       "img": "/imgs/product-imgs/product-7.webp",
       "teacher": " بهادر عرب",
-      "time": 6
+      "time": 6,
+      "Student": 320
     },
     {
       "id": 9,
@@ -79,7 +86,8 @@
       "price": " 800,000  ",
       "img": "/imgs/product-imgs/product-8.webp",
       "teacher": "معین باغشیخی",
-      "time": 30
+      "time": 30,
+      "Student": 310
     },
     {
       "id": 10,
@@ -88,7 +96,8 @@
       "price": " 619,500  ",
       "img": "/imgs/product-imgs/product-9.webp",
       "teacher": "رضا دولتی ",
-      "time": 12
+      "time": 12,
+      "Student": 223
     },
     {
       "id": 11,
@@ -97,7 +106,8 @@
       "price": " 900,000  ",
       "img": "/imgs/product-imgs/product-10.webp",
       "teacher": "معین باغشیخی",
-      "time": 24
+      "time": 24,
+      "Student": 190
     },
     {
       "id": 12,
@@ -106,7 +116,8 @@
       "price": " 8,800,000 ",
       "img": "/imgs/product-imgs/product-11.webp",
       "teacher": "معین باغشیخی",
-      "time": 6
+      "time": 6,
+      "Student": 223
     },
     {
       "id": 13,
@@ -115,7 +126,58 @@
       "price": " 990,000  ",
       "img": "/imgs/product-imgs/product-12.webp",
       "teacher": "مهرشاد براتی",
-      "time": 19
+      "time": 19,
+      "Student": 223
+    },
+    {
+      "id": 14,
+      "product": " مستر فریلنس - هنر همکاری موفق با کارفرماها",
+      "information": "موفق بودن یک وکیل به تعداد بالای پرونده هاش نیست. بلکه به تعداد کیفیت پرونده هاییه که حل کرده. یک برنامه نویس هم برای رشد و ترقی نیاز به هزار کارفرما نداره. بلکه نیاز به چند کارفرمای با کیفیت داره !",
+      "price": " 7,280,000 ",
+      "img": "/imgs/product-imgs/product-14.webp",
+      "teacher": "رضا دولتی",
+      "time": 19,
+      "Student": 278
+    },
+    {
+      "id": 15,
+      "product": " آموزش ری اکت ( ReactJS ) در دنیای واقعی ",
+      "information": "حدود 99 ساعت آموزش جامع و تخصصی ری اکت شما در دوره ری اکت این کتاب خانه قدرت مند و پر استفاده جاوا اسکریپت را به صورت کاملا پروژه محور و کار بردی یاد میگرید",
+      "price": " 5,000,000 ",
+      "img": "/imgs/product-imgs/product-18.webp",
+      "teacher": "اشکان مقدس",
+      "time": 19,
+      "Student": 223
+    },
+    {
+      "id": 16,
+      "product": " آموزش حرفه ای طراحی قالب  ",
+      "information": "بعد از یادگیری اچ تی ام ال  افراد با یک چالش بزرگی رو به رو میشن، اونم اینه که نمیتونن توسط دانشی که یادگرفتن یک طرحی رو از صفر به کد تبدیل کنن و وبسایتی رو پیاده سازی کنن، توی این دوره به شما از صفر اصول طراحی قالب",
+      "price": " 1,100,000 ",
+      "img": "/imgs/product-imgs/product-17.webp",
+      "teacher": "حمید رضا عبادی",
+      "time": 50,
+      "Student": 223
+    },
+    {
+      "id": 17,
+      "product": " آموزش بوت استرپ 5 مقدماتی تا پیشرفته ",
+      "information": "بعد از یادگیری اچ تی ام ال  افراد با یک چالش بزرگی رو به رو میشن، اونم اینه که نمیتونن توسط دانشی که یادگرفتن یک طرحی رو از صفر به کد تبدیل کنن و وبسایتی رو پیاده سازی کنن، توی این دوره به شما از صفر اصول طراحی قالب",
+      "price": "550,000 ",
+      "img": "/imgs/product-imgs/product-13.webp",
+      "teacher": "محمد امین",
+      "time": 40,
+      "Student": 400
+    },
+    {
+      "id": 18,
+      "product": " Tailwind Css آموزش جامع و پروژه محور  ",
+      "information": " این فریمورک متشکل از یکسری کلاس های آماده ای هست که شما برای پیاده سازی هرگونه دیزاینی میتونید ازش بهره ببرید. توجه کنید که  هیچ کامپوننت اماده ای در خود ندارد",
+      "price": "1,200,000",
+      "img": "/imgs/product-imgs/product-18.webp",
+      "teacher": "مهرشاد براتی",
+      "time": 40,
+      "Student": 400
     }
   ]
 }

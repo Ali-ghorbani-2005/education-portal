@@ -3,6 +3,7 @@ import Footer from "../../components/footer/footer";
 import HomeHeder from "../../components/homeComponents/homeHeder";
 import LearningPathSection from "../../components/learningPathSection/learningPathSection";
 import FetchProduct from "../../components/productComponent/fetchProduct";
+import SliderProduct from "../../components/productComponent/sliderProduct";
 import SliderImg from "../../components/slider/slider";
 
 
@@ -28,8 +29,12 @@ export default function Home() {
         <FetchProduct/>  
         <div className="mt-5">
         <LearningPathSection/> 
+        </div> 
+
+        <div>
+          <SliderProduct/>
         </div>
-      </div>  
+      </div>   
 
      
       <div className=" ">

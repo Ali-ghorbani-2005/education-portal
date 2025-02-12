@@ -1,4 +1,4 @@
- export interface ProductCardProps {
+export interface ProductCardProps {
     id: number;
     product: string;
     information: string;
@@ -6,7 +6,8 @@
     img: string;
     teacher: string;
     time: number;
-} 
+    Student: number;
+}
 
 
 

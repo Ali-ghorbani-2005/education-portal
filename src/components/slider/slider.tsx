@@ -16,21 +16,22 @@ export default function SliderImg() {
 
     const imgs = [
         <div key={1}>
-            <img src="imgs/slider/slider-1.jpg" alt="Slider 1" />
+            <img src="imgs/slider/slider-1.jpg" alt="Slider 1" className=" rounded-xl"  />
         </div>,
         <div key={2}>
-            <img src="imgs/slider/slider-2.jpg" alt="Slider 2" />
+            <img src="imgs/slider/slider-2.jpg" alt="Slider 2" className=" rounded-xl" />
         </div>,
         <div key={3}>
-            <img src="imgs/slider/slider-3.jpg" alt="Slider 3" />
+            <img src="imgs/slider/slider-3.jpg" alt="Slider 3" className=" rounded-xl" />
         </div>,
         <div key={4}>
-            <img src="imgs/slider/slider-4.jpg" alt="Slider 4" />
+            <img src="imgs/slider/slider-4.jpg" alt="Slider 4" className=" rounded-xl" />
         </div>,
     ];
 
-    return (
-        <div>
+    return ( 
+        <div className="ml-10">
+        <div className="mt-24">
             <Slider {...settings}>
                 {imgs.map((img, index) => (
                     <div key={index}>
@@ -38,6 +39,7 @@ export default function SliderImg() {
                     </div>
                 ))}
             </Slider>
+        </div> 
         </div>
     );
 }
