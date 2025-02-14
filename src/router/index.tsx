@@ -9,7 +9,8 @@ import Layout from '../components/layout/Layout';
 import Loader from '../components/loader/loader';
 import Information from '../pages/product/informationProduct';
 import UserProfile from '../components/userProfile/userProfile';
-import SearchResults from '../components/searchResults/SearchResults';
+import Roadmap from '../pages/roadmap/roadmap';
+import SearchResults from '../components/searchResults/searchResults';
 
 export default function Index() {
     return (
@@ -21,7 +22,8 @@ export default function Index() {
                     <Route path='/product' element={<Product />} />
                     <Route path='/about-us' element={<AboutUs />} /> 
                     <Route path='/information/:id' element={<Information />} /> 
-                    <Route path='/Search-Results' element={<SearchResults />} /> 
+                    <Route path='/Search-Results' element={<SearchResults />} />  
+                    <Route path='/roadmap' element={<Roadmap />} /> 
                 </Route> 
 
                 <Route path='/login' element={<Login />} />
