@@ -1,6 +1,7 @@
 import Communication from "../../components/Communication/Communication";
 import Footer from "../../components/footer/footer";
 import HomeHeder from "../../components/homeComponents/homeHeder";
+import LearningPathComponent from "../../components/learningPathComponent/learningPathComponent";
 import LearningPathSection from "../../components/learningPathSection/learningPathSection";
 import FetchProduct from "../../components/productComponent/fetchProduct";
 import SliderProduct from "../../components/productComponent/sliderProduct";
@@ -35,7 +36,11 @@ export default function Home() {
         <div className="mt-16">
           <SliderProduct/>
         </div>
-      </div>  
+      </div>   
+
+      <div className="mt-10">
+        <LearningPathComponent/>
+      </div>
 
       </div>  
 
