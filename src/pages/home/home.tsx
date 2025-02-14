@@ -9,7 +9,8 @@ import SliderImg from "../../components/slider/slider";
 
 export default function Home() {
   return ( 
-    <>
+    <> 
+    <div className="bg-gray-100">
     <div>
       <HomeHeder/> 
     </div>  
@@ -25,16 +26,18 @@ export default function Home() {
         
         </div>  
 
-      <div className="bg-slate-100">
+      <div className="bg-slate-100 mt-12">
         <FetchProduct/>  
-        <div className="mt-5">
+        <div className="mt-28">
         <LearningPathSection/> 
         </div> 
 
-        <div>
+        <div className="mt-16">
           <SliderProduct/>
         </div>
-      </div>   
+      </div>  
+
+      </div>  
 
      
       <div className=" ">

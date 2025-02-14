@@ -38,63 +38,63 @@ export default function Roadmap() {
                         <p className="text-right mt-3 font-bold">در خصوص مسیر یادگیری برنامه‌نویسی باید به این نکته دقت داشته باشید که یادگیری برنامه‌نویسی کار ساده‌ای نیست. البته تمامی افراد که از نظر بهره هوشی در سطح نرمال جامعه هستند می‌توانند یادگیری آن را آغاز کنند و موفق شوند به شرطی که هر روز تمرین کنند. شما باید به‌عنوان یک برنامه‌نویس هر روز در حال آموزش و یادگیری باشید. بزرگ‌ترین چالش شما در این مسیر صرف زمان زیاد برای یادگیری است. بسیاری از افراد صبر و حوصله کافی برای تمرین هرروزه ندارند و به همین علت نیز برنامه‌نویس موفقی نمی‌شوند. چالش دوم مشکلاتی است که در انجام پروژه‌ها ممکن است برای شما به وجود بیاید. گاهی اوقات برای برطرف‌کردن یک مشکل کوچک باید زمان زیادی را صرف پروژه خود کنید. پس باید برای این مسیر سخت آماده باشید.</p>
 
                     </div>
-                </div>  
+                </div>
 
                 <div className=" fixed top-0 right-0 mt-20  ">
-                   
-                   <div  >
-                    <p className="text-right mr-10 text-3xl font-thin">موضوعات ویژه</p> 
-                    <p className="mr-8 mt-3 text-2xl font-thin">موضوع موردعلاقه تو انتخاب کن</p> 
-                   </div>  
 
-                   <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">  
-
-                   <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
-                        <p className="font-bold ">مسیر یادگیری برنامه نویسی موبایل</p> 
-                        <p className="text-sm mt-3 text-slate-700">مدرس:ساسان صفری</p>
+                    <div  >
+                        <p className="text-right mr-10 text-3xl font-thin">موضوعات ویژه</p>
+                        <p className="mr-8 mt-3 text-2xl font-thin">موضوع موردعلاقه تو انتخاب کن</p>
                     </div>
 
-                    <div className="bg-blue-500 w-14 h-14 rounded-full flex justify-center items-center ml-6 mt-2  "><img src="/imgs/icons/mobile.png" className="w-9 " alt="" /></div> 
-                    </div>   
+                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">
 
+                        <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
+                            <p className="font-bold ">مسیر یادگیری برنامه نویسی موبایل</p>
+                            <p className="text-sm mt-3 text-slate-700">مدرس:ساسان صفری</p>
+                        </div>
 
-                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">  
-
-                   <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
-                        <p className="font-bold ">مسیر یادگیری برنامه نویسی وب</p> 
-                        <p className="text-sm mt-3 text-slate-700">مدرس:سوگند قاسم پور</p>
+                        <div className="bg-blue-500 w-14 h-14 rounded-full flex justify-center items-center ml-6 mt-2  "><img src="/imgs/icons/mobile.png" className="w-9 " alt="" /></div>
                     </div>
 
-                    <div className="bg-red-700 w-14 h-14 rounded-full flex justify-center items-center ml-11 mt-2  "><img src="/imgs/icons/web.png" className="w-11 " alt="" /></div> 
-                    </div>  
 
-                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">  
+                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">
 
-                   <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
-                        <p className="font-bold ">مسیر یادگیری برنامه نویسی بک اند</p> 
-                        <p className="text-sm mt-3 text-slate-700">مدرس:محمد حمیدی</p>
+                        <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
+                            <p className="font-bold ">مسیر یادگیری برنامه نویسی وب</p>
+                            <p className="text-sm mt-3 text-slate-700">مدرس:سوگند قاسم پور</p>
+                        </div>
+
+                        <div className="bg-red-700 w-14 h-14 rounded-full flex justify-center items-center ml-11 mt-2  "><img src="/imgs/icons/web.png" className="w-11 " alt="" /></div>
                     </div>
 
-                    <div className="bg-blue-700 w-14 h-14 rounded-full flex justify-center items-center ml-6 mt-2  "><img src="/imgs/icons/backend.png" className="w-11 " alt="" /></div> 
-                    </div> 
+                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">
 
-                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">  
+                        <div className="mt-2 text-right ml-16 hover:text-blue-600  ">
+                            <p className="font-bold ">مسیر یادگیری برنامه نویسی بک اند</p>
+                            <p className="text-sm mt-3 text-slate-700">مدرس:محمد حمیدی</p>
+                        </div>
 
-                   <div className="mt-2 text-right ml-40 hover:text-blue-600  ">
-                        <p className="font-bold ">مسیر یادگیری سئو </p> 
-                        <p className="text-sm mt-3 text-slate-700">مدرس:ساسان صفری</p>
+                        <div className="bg-blue-700 w-14 h-14 rounded-full flex justify-center items-center ml-6 mt-2  "><img src="/imgs/icons/backend.png" className="w-11 " alt="" /></div>
                     </div>
 
-                    <div className="bg-yellow-400 w-14 h-14 rounded-full flex justify-center items-center ml-7 mt-2  "><img src="/imgs/icons/search.png" className="w-9 " alt="" /></div> 
-                    </div>  
+                    <div className="flex gap-2 mt-7 bg-white w-96 h-20 rounded-lg -ml-28">
 
-                    
+                        <div className="mt-2 text-right ml-40 hover:text-blue-600  ">
+                            <p className="font-bold ">مسیر یادگیری سئو </p>
+                            <p className="text-sm mt-3 text-slate-700">مدرس:ساسان صفری</p>
+                        </div>
 
-                   <div>
-                     
-                     <div></div>
+                        <div className="bg-yellow-400 w-14 h-14 rounded-full flex justify-center items-center ml-7 mt-2  "><img src="/imgs/icons/search.png" className="w-9 " alt="" /></div>
+                    </div>
 
-                   </div>
+
+
+                    <div>
+
+                        <div></div>
+
+                    </div>
 
                 </div>
 

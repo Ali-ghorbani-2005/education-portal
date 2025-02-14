@@ -84,7 +84,8 @@ interface Product {
     teacher: string;
     time: string;
     price: number;
-    information: string;
+    information: string; 
+    img2:string;
 }
 
 export default function Information() {
@@ -126,7 +127,7 @@ export default function Information() {
     }
 
     return (
-        <div className="mt-10">
+        <div className="">
             {product && (
                 <div className="product-detail   rounded-lg p-6">
                     <h2 className="text-4xl font-lato text-right">{product.product}</h2>
@@ -267,24 +268,32 @@ export default function Information() {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> 
+
+
+                          
+                          <div>
+                           
+                           <div> 
+                            <p>توضحات</p>
+                            </div> 
+
+                            <div>
+                            {/* <img src={product.img} alt={product.product} className="" /> */} 
+                            <p className='text-4xl'>{product.img2}</p>
+                            </div>
+
+                          </div>
+
+
 
 
 
 
 
                     </div>
-
-
                     <div>
-
-
-
-
                     </div>
-
-
-
                 </div>
             )}
         </div>
