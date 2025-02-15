@@ -66,7 +66,7 @@ export default function SliderProduct() {
               </div>
 
               <div className="text-right mt-2 px-3">
-                <h2 className="text-md font-lato text-gray-800">{product.product}</h2>
+                <h2 className="text-sm font-semibold text-gray-800">{product.product}</h2>
               </div>
 
               <div className="flex items-center justify-end mt-2 px-3">

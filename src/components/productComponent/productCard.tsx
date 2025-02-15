@@ -11,7 +11,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
                     </div>
 
                     <div className="text-right mt-2 px-2">
-                        <h2 className="text-sm font-mono text-gray-800 font-semibold">{product}</h2>
+                        <h2 className="text-sm  text-gray-800 font-semibold">{product}</h2>
                     </div>
 
                     <div className="flex items-center justify-end mt-1 px-2">
