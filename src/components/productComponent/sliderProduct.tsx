@@ -12,7 +12,8 @@ interface Product {
   teacher: string;
   time: string;
   price: number;
-  information: string;
+  information: string; 
+  Student:Number;
 }
 
 export default function SliderProduct() {
@@ -50,7 +51,7 @@ export default function SliderProduct() {
     autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 1, 
   };
 
   return (
@@ -61,7 +62,7 @@ export default function SliderProduct() {
           <div key={product.id} className="mt-6 mx-4">
             <div className="product-card bg-white shadow-md w-72 rounded-lg overflow-hidden transition-transform transform hover:scale-105">
               <div className="flex justify-center items-center p-2">
-                {product.img && <img src={product.img} alt={product.product} className="w-56 h-32 object-cover rounded-lg" />}
+                {product.img && <img src={product.img} alt={product.product} className="w-80 h-32 object-cover rounded-lg" />}
               </div>
 
               <div className="text-right mt-2 px-3">
@@ -77,12 +78,17 @@ export default function SliderProduct() {
 
               <div className="flex gap-1 mt-3 px-3">
                 <p className="text-lg font-katibeh text-gray-500">قیمت</p>
-                <p className="text-xl font-lato text-green-600">{product.price}</p>
+                <p className="text-xl font-lato text-green-600">{product.price}</p>  
+                <div className="flex ml-16 gap-1">
+                            <p className="mt-1 text-gray-500">{product.Student}</p>
+                            <img src="/imgs/icons/users-3.png" alt="" />
+
+                        </div>
               </div>
 
               <div className="flex justify-center mt-4 mb-2">
                 <Link to={`/information/${product.id}`}>
-                  <button className="font-lato bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
+                  <button className="font-bold w-64 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
                     مشاهده
                   </button>
                 </Link>

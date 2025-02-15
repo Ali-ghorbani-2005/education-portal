@@ -7,11 +7,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
             <div className="mt-4 mx-2">
                 <div className="product-card bg-white shadow-md rounded-lg w-72 overflow-hidden transition-transform transform hover:scale-105">
                     <div className="flex justify-center items-center p-2">
-                        {img && <img src={img} alt={product} className="w-48 h-32 object-cover rounded-lg" />}
+                        {img && <img src={img} alt={product} className="w-80 h-32 object-cover rounded-lg" />}
                     </div>
 
                     <div className="text-right mt-2 px-2">
-                        <h2 className="text-sm font-lato text-gray-800 font-semibold">{product}</h2>
+                        <h2 className="text-sm font-mono text-gray-800 font-semibold">{product}</h2>
                     </div>
 
                     <div className="flex items-center justify-end mt-1 px-2">
@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
 
                     <div className="flex justify-center mt-2 mb-2">
                         <Link to={`/information/${id}`}>
-                            <button className="font-lato bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
+                            <button className="font-bold w-64 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
                                 مشاهده
                             </button>
                         </Link>
