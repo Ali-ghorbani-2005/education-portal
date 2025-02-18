@@ -1,4 +1,4 @@
-import Communication from "../../components/Communication/Communication";
+// import Communication from "../../components/Communication/Communication";
 import Footer from "../../components/footer/footer";
 import HomeHeder from "../../components/homeComponents/homeHeder";
 import LearningPathComponent from "../../components/learningPathComponent/learningPathComponent";
@@ -17,7 +17,7 @@ export default function Home() {
     </div>  
     <div>
 
-      <Communication/>
+      {/* <Communication/> */}
       
       </div> 
 
