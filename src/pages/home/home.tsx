@@ -4,6 +4,7 @@ import HomeHeder from "../../components/homeComponents/homeHeder";
 import LearningPathComponent from "../../components/learningPathComponent/learningPathComponent";
 import LearningPathSection from "../../components/learningPathSection/learningPathSection";
 import FetchProduct from "../../components/productComponent/fetchProduct";
+import ProductButton from "../../components/productComponent/productButton";
 import SliderProduct from "../../components/productComponent/sliderProduct";
 import SliderImg from "../../components/slider/slider";
 
@@ -28,7 +29,9 @@ export default function Home() {
         </div>  
 
       <div className="bg-slate-100 mt-12"> 
-        
+        <div>
+          <ProductButton/>
+        </div>
         <FetchProduct/>  
         <div className="mt-28">
         <LearningPathSection/> 
