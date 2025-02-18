@@ -17,7 +17,8 @@
       "img": "/imgs/product-imgs/product-1.webp",
       "teacher": "حمیدرضا عبادی",
       "time": 6,
-      "Student": 223
+      "Student": 223 , 
+      "Description":""
     },
     {
       "id": 2,
@@ -28,7 +29,7 @@
       "teacher": "معین باغشیخی",
       "time": 3,
       "Student": 400 ,
-      "img2":"dsmdksmdksmdskmskdms"
+      "Description":"سلام من علی هستم"
     },
     {
       "id": 3,

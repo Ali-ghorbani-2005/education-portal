@@ -85,7 +85,7 @@ interface Product {
     time: string;
     price: number;
     information: string; 
-    img2:string;
+    Description:string;
 }
 
 export default function Information() {
@@ -157,65 +157,6 @@ export default function Information() {
                             <CourseProgress />
                         </div>
 
-                        {/* <div className='flex justify-end'>
-                            <div className='flex gap-5 flex-wrap p-4 w-[600px] ml-24'>
-
-                                
-                                <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-20 '>نوع مشاهده</p>
-                                        <p className="text-sm text-gray-500 ml-20 ">ویدیو</p>
-                                    </div>
-                                    <img src="/imgs/icons/camera.png" className='w-12 h-12' alt="View Type Icon" />
-                                </div>
-
-                                
-                                <div className='bg-white shadow-lg w-60 h-20 mt-10 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-14'>مدت زمان دوره</p>
-                                        <p className="text-sm text-gray-500 ml-20"> {product.time}</p>
-                                    </div>
-                                    <img src="/imgs/icons/clock-2.png" className='w-12 h-12' alt="Time Icon" />
-                                </div>
-
-                               
-                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-20'>بروزرسانی</p>
-                                        <p className="text-sm text-gray-500 ml-20">1403/10/30</p>
-                                    </div>
-                                    <img src="/imgs/icons/calendar.png" className='w-12 h-12' alt="Update Icon" />
-                                </div>
-
-                              
-                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-20'>مدرس</p>
-                                        <p className="text-sm text-gray-500 ml-16">{product.teacher}</p>
-                                    </div>
-                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
-                                </div> 
-
-                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-16'>وضعیت دوره</p>
-                                        <p className="text-sm text-gray-500 ml-20">تکمیل</p>
-                                    </div>
-                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
-                                </div> 
-
-                                <div className='bg-white shadow-lg w-60 h-20 mt-2 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
-                                    <div>
-                                        <p className='text-lg font-lato ml-24'>پیش نیاز</p>
-                                        <p className="text-sm text-gray-500 ml-24">HTML</p>
-                                    </div>
-                                    <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
-                                </div>
-                            </div>
-                        </div>  */}
-
-
-
                         <div className='flex justify-center mt-20 -ml-40 '>
                             <div className='grid grid-cols-3 gap-5 p-4 w-[800px] '>
 
@@ -270,28 +211,28 @@ export default function Information() {
                             </div>
                         </div> 
 
+                    </div>   
 
-                          
-                          <div>
+                    <div className='flex justify-end mt-20 '>
+                    <div className='bg-white w-[760px] h-[500px]'>
                            
-                           <div> 
-                            <p>توضحات</p>
+                           <div className='text-3xl flex justify-end'> 
+                            <p>توضیحات</p> 
+                            <img src="/imgs/icons/playlist.png"  className='w-14' alt="" />
                             </div> 
 
-                            <div>
-                            {/* <img src={product.img} alt={product.product} className="" /> */} 
-                            <p className='text-4xl'>{product.img2}</p>
-                            </div>
+                            <div className='mt-5 flex justify-center items-center'>
+                             <img src={product.img} alt={product.product} className="w-[640px] rounded-lg"  /> 
+                            
+                            </div> 
 
+                            <div> 
+
+                                <p>{product.Description}</p>
+                                </div>
+
+                          </div> 
                           </div>
-
-
-
-
-
-
-
-                    </div>
                     <div>
                     </div>
                 </div>

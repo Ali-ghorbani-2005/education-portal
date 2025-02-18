@@ -27,7 +27,8 @@ export default function Home() {
         
         </div>  
 
-      <div className="bg-slate-100 mt-12">
+      <div className="bg-slate-100 mt-12"> 
+        
         <FetchProduct/>  
         <div className="mt-28">
         <LearningPathSection/> 
