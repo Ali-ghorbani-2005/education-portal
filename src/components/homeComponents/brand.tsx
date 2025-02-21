@@ -7,7 +7,7 @@ export default function Brand() {
 
       <div>
         <Link to='/'>
-          <p className="font-gulzar text-3xl text-blue-500">دانش پلاس</p>
+          <p className="font-gulzar text-2xl sm:text-xl  md:text-4xl  text-blue-500">دانش پلاس</p>
         </Link>
       </div>
 

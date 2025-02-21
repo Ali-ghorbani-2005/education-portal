@@ -7,11 +7,10 @@ import SerchBox from "./serchBox";
 import StatisticsCard from "./StatisticsCard";
 
 
-export default function HomeHeder() { 
+export default function HomeHeder() {
     const { user } = useUser();
     return (
         <>
-
             <div className="relative overflow-hidden h-[570px]">
                 <img src="imgs/icons/bg-lap.jpeg" alt="Background" className="absolute inset-0 object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -22,8 +21,8 @@ export default function HomeHeder() {
                   <CourseNavigation/> 
                   <Brand/>
                 </div>  
-                <div className="relative flex justify-center items-center mt-10">
-                    <p className="text-white text-3xl font-gulzar">دانش پلاس, نخستین قدم برای تبدیل شدن به یک برنامه‌نویس</p> 
+                <div className="relative flex justify-center items-center mt-10 sm:mr-12">
+                    <p className="text-white text-3xl font-gulzar sm:text-lg md:text-3xl ">دانش پلاس, نخستین قدم برای تبدیل شدن به یک برنامه‌نویس</p> 
                 </div>   
                 <div className="relative flex justify-center items-center mt-20"> 
                     <SerchBox/>
@@ -38,10 +37,9 @@ export default function HomeHeder() {
                 </div> 
 
                 <div>
-                <h1>خوش آمدید، {user?.name}</h1> {/* نمایش نام کاربر */}
+                <h1>خوش آمدید، {user?.name}</h1> 
                 </div>
             </div>
-
         </>
     )
 }

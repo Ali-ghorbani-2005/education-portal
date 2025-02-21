@@ -12,13 +12,12 @@ import SliderImg from "../../components/slider/slider";
 export default function Home() {
   return ( 
     <> 
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 ">
     <div>
       <HomeHeder/> 
     </div>  
     <div>
 
-      {/* <Communication/> */}
       
       </div> 
 

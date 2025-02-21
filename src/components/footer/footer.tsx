@@ -143,12 +143,21 @@ export default function Footer() {
           </div>
 
           {/* دکمه برگشت به بالا */}
-          <div className="flex justify-center mt-8">
+          {/* <div className="flex justify-center mt-8">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="bg-blue-500 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-600 transition-colors"
             >
               بازگشت به بالا ↑
+            </button>
+          </div> */}
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-lg shadow-lg hover:bg-gradient-to-l transition-all duration-300 transform hover:scale-105"
+            >
+              <span className="mr-2">بازگشت به بالا</span>
+              <span>↑</span>
             </button>
           </div>
         </div>
