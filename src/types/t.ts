@@ -33,4 +33,18 @@ export type SlickSettings = {
     slidesToShow?: number;
     slidesToScroll?: number;
     [key: string]: any; // برای اضافه کردن هر گزینه‌ی دیگر
+} 
+
+
+
+export interface Product {
+  id: number;
+  product: string;
+  teacher: string;
+  img: string;
+  price: number;
+  Student: number;
+  Free?: number;
+  Sale?: number;
+  off?: number;
 }

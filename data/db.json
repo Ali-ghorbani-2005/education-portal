@@ -18,7 +18,10 @@
       "teacher": "حمیدرضا عبادی",
       "time": 6,
       "Student": 223 , 
-      "Description":""
+      "Description":"" , 
+      "off":123 ,  
+      "Sale":55
+
     },
     {
       "id": 2,
@@ -29,7 +32,9 @@
       "teacher": "معین باغشیخی",
       "time": 3,
       "Student": 400 ,
-      "Description":"سلام من علی هستم"
+      "Description":"سلام من علی هستم" ,
+      "off":123 ,
+      "Sale":66
     },
     {
       "id": 3,
@@ -39,7 +44,9 @@
       "img": "/imgs/product-imgs/product-3.webp",
       "teacher": "حمیدرضا عبادی",
       "time": 10,
-      "Student": 160
+      "Student": 160 ,
+      "off":124, 
+      "Sale":55
     },
     {
       "id": 4,
@@ -49,7 +56,9 @@
       "img": "/imgs/product-imgs/product-4.webp",
       "teacher": "معین باغشیخی",
       "time": 20,
-      "Student": 340
+      "Student": 340 ,
+      "off":123,
+      "Sale":66 
     },
     {
       "id": 5,
@@ -59,7 +68,9 @@
       "img": "/imgs/product-imgs/product-5.webp",
       "teacher": " محمدامین سعیدی راد",
       "time": 15,
-      "Student": 500
+      "Student": 500 , 
+      "off":123,
+      "Sale":66
     },
     {
       "id": 6,
@@ -69,17 +80,22 @@
       "img": "/imgs/product-imgs/product-6.webp",
       "teacher": "معین باغشیخی",
       "time": 12,
-      "Student": 200
+      "Student": 200 ,
+      "off":123, 
+      "Sale":55
     },
     {
       "id": 8,
       "product": "آموزش جاوا اسکریپت مقدماتی  ",
       "information": " آموزش جاوا اسکریپت برای تمامی افرادی ک قصد ورود به زبان برنامه نویسی دارند مناسب می باشد . خصوصا برای علاقه مندان به حوزه فرانت همان طور که می دانید جاوا اسکریپت یکی از زبان های برنامه نویسی محبوب و پر طرفدار است که بازار کار فوق العاد ",
-      "price": " 3,200,000  ",
+      "price": " رایگان ",
       "img": "/imgs/product-imgs/product-7.webp",
       "teacher": " بهادر عرب",
       "time": 6,
-      "Student": 320
+      "Student": 320,
+      "off":124, 
+      "Sale":66 ,
+      "Free":1
     },
     {
       "id": 9,
@@ -89,7 +105,9 @@
       "img": "/imgs/product-imgs/product-8.webp",
       "teacher": "معین باغشیخی",
       "time": 30,
-      "Student": 310
+      "Student": 310,
+      "off":123, 
+      "Sale":55
     },
     {
       "id": 10,
@@ -99,7 +117,9 @@
       "img": "/imgs/product-imgs/product-9.webp",
       "teacher": "رضا دولتی ",
       "time": 12,
-      "Student": 223
+      "Student": 223 ,
+      "off":123,
+      "Sale":66
     },
     {
       "id": 11,
@@ -109,17 +129,22 @@
       "img": "/imgs/product-imgs/product-10.webp",
       "teacher": "معین باغشیخی",
       "time": 24,
-      "Student": 190
+      "Student": 190 , 
+      "off":124, 
+      "Sale":66
     },
     {
       "id": 12,
       "product": " آموزش جامع زبان انگلیسی ",
       "information": "  با دوره جامع آموزش زبان انگلیسی سبزلرن، زبان انگلیسی را برای پیشرفت در برنامه‌نویسی حرفه‌ای یاد بگیرید و مهارت‌های خود را در کوتاه‌ترین زمان تقویت کنید! ",
-      "price": " 8,800,000 ",
+      "price": " رایگان ",
       "img": "/imgs/product-imgs/product-11.webp",
       "teacher": "معین باغشیخی",
       "time": 6,
-      "Student": 223
+      "Student": 223 , 
+      "off":123,
+      "Sale":55 ,
+      "Free":1
     },
     {
       "id": 13,
@@ -129,17 +154,22 @@
       "img": "/imgs/product-imgs/product-12.webp",
       "teacher": "مهرشاد براتی",
       "time": 19,
-      "Student": 223
+      "Student": 223 , 
+      "off":124, 
+      "Sale":55
     },
     {
       "id": 14,
       "product": " مستر فریلنس - هنر همکاری موفق با کارفرماها",
       "information": "موفق بودن یک وکیل به تعداد بالای پرونده هاش نیست. بلکه به تعداد کیفیت پرونده هاییه که حل کرده. یک برنامه نویس هم برای رشد و ترقی نیاز به هزار کارفرما نداره. بلکه نیاز به چند کارفرمای با کیفیت داره !",
-      "price": " 7,280,000 ",
+      "price": " رایگان ",
       "img": "/imgs/product-imgs/product-14.webp",
       "teacher": "رضا دولتی",
       "time": 19,
-      "Student": 278
+      "Student": 278,
+      "off":0,
+      "Sale":0 ,
+      "Free":1
     },
     {
       "id": 15,
@@ -149,7 +179,9 @@
       "img": "/imgs/product-imgs/product-18.webp",
       "teacher": "اشکان مقدس",
       "time": 19,
-      "Student": 223
+      "Student": 223 ,
+      "off":123,
+      "Sale":66
     },
     {
       "id": 16,
@@ -159,7 +191,9 @@
       "img": "/imgs/product-imgs/product-17.webp",
       "teacher": "حمید رضا عبادی",
       "time": 50,
-      "Student": 223
+      "Student": 223,
+      "off":124,
+      "Sale":55
     },
     {
       "id": 17,
@@ -169,7 +203,9 @@
       "img": "/imgs/product-imgs/product-13.webp",
       "teacher": "محمد امین",
       "time": 40,
-      "Student": 400
+      "Student": 400,
+      "off":123,
+      "Sale":66
     },
     {
       "id": 18,
@@ -179,7 +215,9 @@
       "img": "/imgs/product-imgs/product-18.webp",
       "teacher": "مهرشاد براتی",
       "time": 40,
-      "Student": 400
+      "Student": 400 ,
+      "off":124,
+      "Sale":55
     }
   ]
 }
