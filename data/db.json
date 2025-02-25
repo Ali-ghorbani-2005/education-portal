@@ -6,6 +6,13 @@
       "age": "18",
       "phone": "09124598738",
       "password": "001384"
+    },
+    {
+      "name": "احد ",
+      "age": 12,
+      "phone": "0912459873",
+      "password": "001384",
+      "id": 2
     }
   ],
   "product": [
@@ -17,11 +24,10 @@
       "img": "/imgs/product-imgs/product-1.webp",
       "teacher": "حمیدرضا عبادی",
       "time": 6,
-      "Student": 223 , 
-      "Description":"" , 
-      "off":123 ,  
-      "Sale":55
-
+      "Student": 223,
+      "Description": "",
+      "off": 123,
+      "Sale": 55
     },
     {
       "id": 2,
@@ -31,10 +37,10 @@
       "img": "/imgs/product-imgs/product-2.webp",
       "teacher": "معین باغشیخی",
       "time": 3,
-      "Student": 400 ,
-      "Description":"سلام من علی هستم" ,
-      "off":123 ,
-      "Sale":66
+      "Student": 400,
+      "Description": "سلام من علی هستم",
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 3,
@@ -44,9 +50,9 @@
       "img": "/imgs/product-imgs/product-3.webp",
       "teacher": "حمیدرضا عبادی",
       "time": 10,
-      "Student": 160 ,
-      "off":124, 
-      "Sale":55
+      "Student": 160,
+      "off": 124,
+      "Sale": 55
     },
     {
       "id": 4,
@@ -56,9 +62,9 @@
       "img": "/imgs/product-imgs/product-4.webp",
       "teacher": "معین باغشیخی",
       "time": 20,
-      "Student": 340 ,
-      "off":123,
-      "Sale":66 
+      "Student": 340,
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 5,
@@ -68,9 +74,9 @@
       "img": "/imgs/product-imgs/product-5.webp",
       "teacher": " محمدامین سعیدی راد",
       "time": 15,
-      "Student": 500 , 
-      "off":123,
-      "Sale":66
+      "Student": 500,
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 6,
@@ -80,9 +86,9 @@
       "img": "/imgs/product-imgs/product-6.webp",
       "teacher": "معین باغشیخی",
       "time": 12,
-      "Student": 200 ,
-      "off":123, 
-      "Sale":55
+      "Student": 200,
+      "off": 123,
+      "Sale": 55
     },
     {
       "id": 8,
@@ -93,9 +99,9 @@
       "teacher": " بهادر عرب",
       "time": 6,
       "Student": 320,
-      "off":124, 
-      "Sale":66 ,
-      "Free":1
+      "off": 124,
+      "Sale": 66,
+      "Free": 1
     },
     {
       "id": 9,
@@ -106,8 +112,8 @@
       "teacher": "معین باغشیخی",
       "time": 30,
       "Student": 310,
-      "off":123, 
-      "Sale":55
+      "off": 123,
+      "Sale": 55
     },
     {
       "id": 10,
@@ -117,9 +123,9 @@
       "img": "/imgs/product-imgs/product-9.webp",
       "teacher": "رضا دولتی ",
       "time": 12,
-      "Student": 223 ,
-      "off":123,
-      "Sale":66
+      "Student": 223,
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 11,
@@ -129,9 +135,9 @@
       "img": "/imgs/product-imgs/product-10.webp",
       "teacher": "معین باغشیخی",
       "time": 24,
-      "Student": 190 , 
-      "off":124, 
-      "Sale":66
+      "Student": 190,
+      "off": 124,
+      "Sale": 66
     },
     {
       "id": 12,
@@ -141,10 +147,10 @@
       "img": "/imgs/product-imgs/product-11.webp",
       "teacher": "معین باغشیخی",
       "time": 6,
-      "Student": 223 , 
-      "off":123,
-      "Sale":55 ,
-      "Free":1
+      "Student": 223,
+      "off": 123,
+      "Sale": 55,
+      "Free": 1
     },
     {
       "id": 13,
@@ -154,9 +160,9 @@
       "img": "/imgs/product-imgs/product-12.webp",
       "teacher": "مهرشاد براتی",
       "time": 19,
-      "Student": 223 , 
-      "off":124, 
-      "Sale":55
+      "Student": 223,
+      "off": 124,
+      "Sale": 55
     },
     {
       "id": 14,
@@ -167,9 +173,9 @@
       "teacher": "رضا دولتی",
       "time": 19,
       "Student": 278,
-      "off":0,
-      "Sale":0 ,
-      "Free":1
+      "off": 0,
+      "Sale": 0,
+      "Free": 1
     },
     {
       "id": 15,
@@ -179,9 +185,9 @@
       "img": "/imgs/product-imgs/product-18.webp",
       "teacher": "اشکان مقدس",
       "time": 19,
-      "Student": 223 ,
-      "off":123,
-      "Sale":66
+      "Student": 223,
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 16,
@@ -192,8 +198,8 @@
       "teacher": "حمید رضا عبادی",
       "time": 50,
       "Student": 223,
-      "off":124,
-      "Sale":55
+      "off": 124,
+      "Sale": 55
     },
     {
       "id": 17,
@@ -204,8 +210,8 @@
       "teacher": "محمد امین",
       "time": 40,
       "Student": 400,
-      "off":123,
-      "Sale":66
+      "off": 123,
+      "Sale": 66
     },
     {
       "id": 18,
@@ -215,9 +221,9 @@
       "img": "/imgs/product-imgs/product-18.webp",
       "teacher": "مهرشاد براتی",
       "time": 40,
-      "Student": 400 ,
-      "off":124,
-      "Sale":55
+      "Student": 400,
+      "off": 124,
+      "Sale": 55
     }
   ]
 }

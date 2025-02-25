@@ -25,6 +25,26 @@ export const loginUser = async (name:STRING , password:STRING) =>{
 
  
 
-
+// userServices.ts
+export const submitSignUp = async (userData: { name: string; age: string; phone: string; password: string }) => {
+    try {
+      const response = await fetch('http://localhost:3000/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+      if (!response.ok) {
+        throw new Error('مشکلی در ارسال اطلاعات به سرور به وجود آمد');
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Error:', error);
+      throw error;
+    }
+  };
+  
+  
 
 
