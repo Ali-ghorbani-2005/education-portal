@@ -11,6 +11,7 @@ import Information from '../pages/product/informationProduct';
 import UserProfile from '../components/userProfile/userProfile';
 import Roadmap from '../pages/roadmap/roadmap';
 import SearchResults from '../components/searchResults/searchResults';
+import Cart from '../pages/cart/cart';
 
 export default function Index() {
     return (
@@ -23,7 +24,8 @@ export default function Index() {
                     <Route path='/about-us' element={<AboutUs />} /> 
                     <Route path='/information/:id' element={<Information />} /> 
                     <Route path='/Search-Results' element={<SearchResults />} />  
-                    <Route path='/roadmap' element={<Roadmap />} /> 
+                    <Route path='/roadmap' element={<Roadmap />} />  
+                    <Route path='/cart' element={<Cart/>} />  
                 </Route> 
 
                 <Route path='/login' element={<Login />} />

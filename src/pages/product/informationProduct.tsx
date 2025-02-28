@@ -1,81 +1,8 @@
-
-// import  { useEffect, useState } from 'react';
-// import { useParams } from 'react-router-dom';
-// import { fetchData } from '../../services/fetchData';
-
-// interface Product {
-//     id: number; // یا string (بسته به نوع آیدی شما)
-//     product: string;
-//     img: string;
-//     teacher: string;
-//     time: string;
-//     price: number;
-//     information: string;
-// }
-
-// export default function Information() {
-//     const { id } = useParams<{ id: string }>(); // مشخص کردن نوع پارامتر
-//     const [product, setProduct] = useState<Product | null>(null); // نوع محصول
-//     const [loading, setLoading] = useState<boolean>(true); // نوع بارگذاری
-//     const [error, setError] = useState<string | null>(null); // نوع خطا
-
-//     useEffect(() => {
-//         const fetchProduct = async () => {
-//             try {
-//                 const data: Product[] = await fetchData(); // نوع داده‌های دریافتی
-//                 const foundProduct = data.find(item => item.id === parseInt(id));
-//                 if (foundProduct) {
-//                     setProduct(foundProduct);
-//                 } else {
-//                     setError("Product not found");
-//                 }
-//             } catch (err) {
-//                 setError((err as Error).message); // تبدیل خطا به نوع استاندارد
-//             } finally {
-//                 setLoading(false);
-//             }
-//         };
-
-//         fetchProduct();
-//     }, [id]);
-
-//     if (loading) {
-//         return <div>Loading...</div>;
-//     }
-
-//     if (error) {
-//         return <div>Error: {error}</div>;
-//     } 
-
-
-
-//     return (
-//         <div className="mt-10">
-//             {product && (
-//                 <div className="product-detail bg-white shadow-lg rounded-lg p-6">
-//                     <h2 className="text-2xl font-semibold">{product.product}</h2> 
-//                     {/* {product.img && <img src={product.img} alt={product.product} className="w-full h-64 object-cover rounded-lg" />} */}
-//                     <p className="text-lg mt-4">Teacher: {product.teacher}</p>
-//                     <p className="text-lg mt-4">Time: {product.time}</p>
-//                     <p className="text-lg font-bold mt-4">Price: {product.price} تومان</p>
-//                     <p className="mt-4">{product.information}</p>
-//                 </div>
-//             )}
-//         </div>
-//     );
-// }  
-
-
-
-
-
-
-
-
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchData } from '../../services/fetchData';
 import CourseProgress from '../../components/productComponent/courseProgress';
+import { useCart } from '../../components/context/cartContext';
 
 interface Product {
     id: number; // یا string (بسته به نوع آیدی شما)
@@ -84,15 +11,16 @@ interface Product {
     teacher: string;
     time: string;
     price: number;
-    information: string; 
-    Description:string;
+    information: string;
+    Description: string;
 }
 
 export default function Information() {
     const { id } = useParams<{ id: string }>();
     const [product, setProduct] = useState<Product | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+    const [error, setError] = useState<string | null>(null); 
+    const { addToCart } = useCart();
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -142,7 +70,21 @@ export default function Information() {
                         <div className='flex gap-3 justify-center items-center ml-[500px] -mt-20'>
                             <p className='font-katibeh text-2xl mt-2'>تومان</p>   <p className="text-3xl font-lato mt-4"> {product.price} </p>
 
-                            <button className='bg-green-500 text-white w-64 h-12 rounded-xl ml-10 shadow-lg transition-transform transform hover:scale-105 hover:bg-green-600'>
+                            {/* <button className='bg-green-500 text-white w-64 h-12 rounded-xl ml-10 shadow-lg transition-transform transform hover:scale-105 hover:bg-green-600'>
+                                افزودن به سبد خرید
+                            </button> */}
+                            <button
+                                onClick={() =>
+                                    addToCart({
+                                        id: product.id,
+                                        product: product.product,
+                                        img: product.img,
+                                        price: product.price,
+                                        quantity: 1,
+                                    })
+                                }
+                                className="bg-green-500 text-white w-64 h-12 rounded-xl ml-10 shadow-lg transition-transform transform hover:scale-105 hover:bg-green-600"
+                            >
                                 افزودن به سبد خرید
                             </button>
                         </div>
@@ -209,30 +151,30 @@ export default function Information() {
                                 </div>
 
                             </div>
-                        </div> 
+                        </div>
 
-                    </div>   
+                    </div>
 
                     <div className='flex justify-end mt-20 '>
-                    <div className='bg-white w-[760px] h-[500px]'>
-                           
-                           <div className='text-3xl flex justify-end'> 
-                            <p>توضیحات</p> 
-                            <img src="/imgs/icons/playlist.png"  className='w-14' alt="" />
-                            </div> 
+                        <div className='bg-white w-[760px] h-[900px]'>
+
+                            <div className='text-3xl flex justify-end'>
+                                <p>توضیحات</p>
+                                <img src="/imgs/icons/playlist.png" className='w-14' alt="" />
+                            </div>
 
                             <div className='mt-5 flex justify-center items-center'>
-                             <img src={product.img} alt={product.product} className="w-[640px] rounded-lg"  /> 
-                            
-                            </div> 
+                                <img src={product.img} alt={product.product} className="w-[640px] rounded-lg" />
 
-                            <div> 
+                            </div>
+
+                            <div className=''>
 
                                 <p>{product.Description}</p>
-                                </div>
+                            </div>
 
-                          </div> 
-                          </div>
+                        </div>
+                    </div>
                     <div>
                     </div>
                 </div>
@@ -240,3 +182,5 @@ export default function Information() {
         </div>
     );
 }
+
+

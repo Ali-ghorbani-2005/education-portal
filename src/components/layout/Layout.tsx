@@ -5,6 +5,7 @@ import CourseNavigation from '../homeComponents/CourseNavigation';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 import Footer from '../footer/footer';
 import Brand from '../homeComponents/brand';
+import CartButton from '../cartButton/cartButton';
 
 
 
@@ -22,16 +23,23 @@ export default function Layout() {
                         <LayoutAuthentication />
 
                     </div>  
+                  
+                  <div className='flex '> 
+                  <div>
+                        <CartButton/>
+                    </div>  
 
                     <div>
                         <ThemeSwitcher/>
+                    </div> 
+
                     </div>
 
                     <div className='mt-5'>
                         <LayoutShearch />
                     </div>
 
-                    <div className='flex mt-5 ml-40'>
+                    <div className='flex mt-5 ml-20'>
                         <CourseNavigation /> 
                          <Brand/>
                     </div>
