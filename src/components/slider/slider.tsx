@@ -25,13 +25,13 @@ export default function SliderImg() {
             <img src="imgs/slider/slider-3.jpg" alt="Slider 3" className=" rounded-xl" />
         </div>,
         <div key={4}>
-            <img src="imgs/slider/slider-4.jpg" alt="Slider 4" className=" rounded-xl" />
+            <img src="imgs/slider/slider-4.jpg" alt="Slider 4" className=" rounded-xl " />
         </div>,
     ];
 
     return ( 
-        <div className="ml-10">
-        <div className="mt-24">
+        <div className="ml-10 md:ml-10 sm:ml-0">
+        <div className="mt-24 md:mt-24 sm:mt-2 ">
             <Slider {...settings}>
                 {imgs.map((img, index) => (
                     <div key={index}>

@@ -7,7 +7,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
             <div className="mt-4 mx-2">
                 <div className="product-card bg-white shadow-md rounded-lg w-72 md:w-72 sm:w-96 overflow-hidden transition-transform transform hover:scale-105">
                     <div className="flex justify-center items-center p-2">
-                        {img && <img src={img} alt={product} className="w-80 md:w-80 sm:w-96 h-32 object-cover rounded-lg" />}
+                        {img && <img src={img} alt={product} className="w-80 md:w-80 sm:w-96 h-32 md:h-32 sm:h-36 object-cover rounded-lg" />}
                     </div>
 
                     <div className="text-right mt-2 px-2">

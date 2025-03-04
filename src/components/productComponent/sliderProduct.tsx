@@ -51,8 +51,23 @@ export default function SliderProduct() {
     autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 4,
-    slidesToScroll: 1, 
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // md (تبلت و صفحه‌های متوسط)
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 430, // sm (موبایل)
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   };
+  
 
   return (
     <div className="p-4">
@@ -60,9 +75,9 @@ export default function SliderProduct() {
       <Slider {...settings}>
         {products.map(product => (
           <div key={product.id} className="mt-6 mx-4">
-            <div className="product-card bg-white shadow-md w-72 rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+            <div className="product-card bg-white shadow-md w-72 md:w-72 sm:w-96 rounded-lg overflow-hidden transition-transform transform hover:scale-105">
               <div className="flex justify-center items-center p-2">
-                {product.img && <img src={product.img} alt={product.product} className="w-80 h-32 object-cover rounded-lg" />}
+                {product.img && <img src={product.img} alt={product.product} className="w-80 md:w-80 sm:w-96 h-32 object-cover rounded-lg" />}
               </div>
 
               <div className="text-right mt-2 px-3">

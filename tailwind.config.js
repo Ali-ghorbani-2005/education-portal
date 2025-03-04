@@ -27,7 +27,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: '391px', // تغییر اندازه sm به 480px
+        sm: '430px', // تغییر اندازه sm به 480px
       },
       fontFamily: {
         gulzar: ['Gulzar', 'cursive'],
