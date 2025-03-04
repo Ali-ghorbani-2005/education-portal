@@ -47,7 +47,7 @@ export default function FetchProduct() {
       <div className='mt-10'>
         <p className="text-right mr-10 text-3xl text-gray-700 font-katibeh">راهی به سوی موفقیت شما</p>
       </div>
-      <div className='grid grid-cols-4 gap-4 p-4'>
+      <div className='grid grid-cols-4 md:grid-cols-4  sm:grid-cols-1 gap-4 p-4'>
         {data.map(product => (
           <div key={product.id}>
             <ProductCard {...product} /> {/* price به عنوان number */}

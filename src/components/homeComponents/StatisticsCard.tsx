@@ -5,7 +5,7 @@ export default function StatisticsCard() {
         <>
 
             <div>
-                <div className="flex gap-60 mt-10 md:gap-60 sm:gap-10 sm:mr-10">
+                <div className="flex gap-60 mt-10 md:gap-60 sm:gap-20">
                     <div>
                         <img src="imgs/icons/student.png" className="w-28 md:w-28 sm:w-16 " alt="" />
                         <p className="text-3xl text-center md:text-3xl  text-white font-gulzar sm:text-xl sm:text-center " >1780</p>

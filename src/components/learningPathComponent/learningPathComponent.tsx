@@ -6,9 +6,9 @@ export default function LearningPathComponent() {
             <div>
                 <div>
                     <div className="text-right">
-                        <p className="text-2xl mr-5 font-bold">از شروع مسیر کنارتیم نمیذاریم آب تو دلت تکون بخوره</p>
+                        <p className="text-2xl mr-5 font-bold sm:text-lg">از شروع مسیر کنارتیم نمیذاریم آب تو دلت تکون بخوره</p>
                     </div>
-                    <div className="flex flex-wrap justify-between mt-5 mx-28">
+                    <div className="flex flex-wrap justify-between mt-5 mx-28 md:ml-14 sm:-ml-14">
                         <div className="bg-white flex w-[540px] rounded-lg h-32 mb-4">
                             <div className="text-right w-96 ml-16">
                                 <p className="text-xl mt-4 font-sans">تضمین کاملترن محتوا</p>
