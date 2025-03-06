@@ -155,8 +155,16 @@ export default function Information() {
 
                     </div>
 
-                    <div className='flex justify-end mt-20 '>
-                        <div className='bg-white w-[760px] h-[900px]'>
+                    <div className='flex justify-end mt-20 '> 
+                    
+
+                    <div>
+                        
+                    </div>
+
+
+
+                        <div className='bg-white w-[760px] h-[700px]'>
 
                             <div className='text-3xl flex justify-end'>
                                 <p>توضیحات</p>
@@ -168,12 +176,14 @@ export default function Information() {
 
                             </div>
 
-                            <div className=''>
-
-                                <p>{product.Description}</p>
+                            <div className='mt-10'>
+                                 
+                                 <div className='text-right w-[700px] ml-10 '>
+                                <p className='text-xl text-gray-500 font-serif'>{product.Description}</p> 
+                                </div>
                             </div>
 
-                        </div>
+                        </div> 
                     </div>
                     <div>
                     </div>

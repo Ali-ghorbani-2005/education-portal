@@ -1,3 +1,5 @@
+import CartButton from "../cartButton/cartButton";
+import HomeCart from "../cartButton/homeCart";
 import MessageBox from "../messageBox/messageBox";
 import { useUser } from "../userProfile/context";
 import AuthenticationButton from "./authenticationButton";
@@ -14,8 +16,9 @@ export default function HomeHeder() {
             <div className="relative overflow-hidden h-[570px]">
                 <img src="imgs/icons/bg-lap.jpeg" alt="Background" className="absolute inset-0 object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div className="relative ">
-                   <AuthenticationButton/>
+                <div className="relative flex ">
+                   <AuthenticationButton/> 
+                  <HomeCart/>
                 </div>
                 <div className="relative z-10 flex justify-end gap-4 mr-24 text-white">
                   <CourseNavigation/> 
