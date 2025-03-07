@@ -1,8 +1,7 @@
-import CartButton from "../cartButton/cartButton";
 import HomeCart from "../cartButton/homeCart";
 import MessageBox from "../messageBox/messageBox";
+import UserMenu from "../UserMenu/userMenu";
 import { useUser } from "../userProfile/context";
-import AuthenticationButton from "./authenticationButton";
 import Brand from "./brand";
 import CourseNavigation from "./CourseNavigation";
 import SerchBox from "./serchBox";
@@ -17,7 +16,7 @@ export default function HomeHeder() {
                 <img src="imgs/icons/bg-lap.jpeg" alt="Background" className="absolute inset-0 object-cover w-full h-full" />
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 <div className="relative flex ">
-                   <AuthenticationButton/> 
+                   <UserMenu/> 
                   <HomeCart/>
                 </div>
                 <div className="relative z-10 flex justify-end gap-4 mr-24 text-white">
