@@ -19,7 +19,7 @@ export default function Cart() {
            <div className="bg-white p-5 rounded-lg shadow-lg w-[700px]">
            
             <div className="bg-green-500 h-14 flex items-center px-4 rounded-t-lg">
-              <p className="text-3xl text-white">سبد خرید</p>
+              <p className="text-3xl text-white dark:text-blue-800">سبد خرید</p>
             </div>
 
            
