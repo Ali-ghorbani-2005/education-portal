@@ -15,7 +15,7 @@ export default function Layout() {
     return (
         <>
 
-            <div className=' h-20 shadow-sm shadow-gray-400'>
+            <div className=' h-20 shadow-sm shadow-gray-400 dark:bg-slate-800'>
 
                 <div className='flex gap-20'>
                     <div className='-mt-4 ml-4 '>
@@ -47,9 +47,9 @@ export default function Layout() {
                 </div>
             </div>
 
-            <div className='bg-gray-200  h-full'>
+            <div className='bg-gray-200  dark:bg-slate-900  h-full'>
 
-                <main>
+                <main >
                     <div className=''>
                         <Outlet />
                     </div>

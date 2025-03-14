@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
       className="bg-gray-200 dark:bg-gray-800 w-11 h-11 rounded-full mt-5 flex justify-center items-center"
     >
       <img
-        src={theme === "light" ? "/imgs/icons/moon.png" : "/imgs/icons/sun.png"}
+        src={theme === "light" ? "/imgs/icons/moon.png" : "/imgs/icons/sunshine.png"}
         className="w-7"
         alt="Toggle Theme"
       />

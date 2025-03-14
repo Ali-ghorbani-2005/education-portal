@@ -12,7 +12,7 @@ import SliderImg from "../../components/slider/slider";
 export default function Home() {
   return ( 
     <> 
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100 dark:bg-slate-900 ">
     <div>
       <HomeHeder/> 
     </div>  
@@ -27,7 +27,7 @@ export default function Home() {
         
         </div>  
 
-      <div className="bg-slate-100 mt-12"> 
+      <div className="bg-slate-100 dark:bg-slate-900 mt-12"> 
         <div>
           <ProductButton/>
         </div>
@@ -36,7 +36,7 @@ export default function Home() {
         <LearningPathSection/> 
         </div> 
 
-        <div className="mt-16">
+        <div className="mt-16 ">
           <SliderProduct/>
         </div>
       </div>   

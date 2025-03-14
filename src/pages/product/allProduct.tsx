@@ -64,31 +64,31 @@ export default function AllProduct() {
       <div className='flex'>
         <div className="container mx-auto py-10 md:mr-28 ">
           <div className='flex justify-end '>
-            <h2 className="text-2xl font-bold text-end mr-6 text-gray-700">دوره ها</h2>
+            <h2 className="text-3xl font-bold text-end mr-6 text-gray-700 dark:text-white">دوره ها</h2>
             <div className='bg-yellow-400 text-yellow-400 rounded-md w-5 h-5 mt-3 '>.</div>
           </div>
           <div className="grid grid-cols-1  md:ml-5  sm:grid-cols-1 sm:gap-10 sm: md:grid-cols-3 gap-5 mt-10">
             {filteredProducts.map((product) => (
               <div key={product.id} className="mx-2">
-                <div className="product-card bg-white shadow-md w-56  md:w-72  rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div className="product-card bg-white dark:bg-slate-800 shadow-md w-56  md:w-72  rounded-lg overflow-hidden transition-transform transform hover:scale-105">
                   <div className="flex justify-center items-center p-2">
                     {product.img && <img src={product.img} alt={product.product} className="w-80 h-32 object-cover rounded-lg" />}
                   </div>
 
                   <div className="text-right mt-2 px-3">
-                    <h2 className="text-sm font-semibold text-gray-800">{product.product}</h2>
+                    <h2 className="text-sm font-semibold text-gray-800 dark:text-white">{product.product}</h2>
                   </div>
 
                   <div className="flex items-center justify-end mt-2 px-3">
-                    <p className="text-gray-600 font-katibeh text-sm">{product.teacher}</p>
+                    <p className="text-gray-600 font-katibeh text-sm dark:text-white">{product.teacher}</p>
                     <img src="imgs/icons/techer.png" className="w-6 h-6 ml-1" alt="Teacher Icon" />
                   </div>
 
                   <div className="border-b border-gray-300 mt-3"></div>
 
                   <div className="flex gap-1 mt-3 px-3">
-                    <p className="text-sm md:text-xl font-katibeh text-gray-500">قیمت</p>
-                    <p className="text-sm md:text-xl font-lato text-green-600">{product.price}</p>
+                    <p className="text-sm md:text-xl font-katibeh text-gray-500 dark:text-white">قیمت</p>
+                    <p className="text-sm md:text-xl font-lato text-green-600 dark:text-green-500">{product.price}</p>
                     <div className="flex ml-16 gap-1">
                       <p className="mt-1 text-gray-500">{product.Student}</p>
                       <img src="/imgs/icons/users-3.png" alt="" />
@@ -97,7 +97,7 @@ export default function AllProduct() {
 
                   <div className="flex justify-center mt-4 mb-2">
                     <Link to={`/information/${product.id}`}>
-                      <button className="font-bold w-52 md:w-64 bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
+                      <button className="font-bold w-52 md:w-64 bg-blue-500 dark:bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
                         مشاهده
                       </button>
                     </Link>

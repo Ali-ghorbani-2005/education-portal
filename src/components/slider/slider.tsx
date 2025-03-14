@@ -30,7 +30,7 @@ export default function SliderImg() {
     ];
 
     return ( 
-        <div className="ml-10 md:ml-10 sm:ml-0">
+        <div className="ml-10 md:ml-10 sm:ml-0 dark:bg-slate-900">
         <div className="mt-24 md:mt-24 sm:mt-2 ">
             <Slider {...settings}>
                 {imgs.map((img, index) => (

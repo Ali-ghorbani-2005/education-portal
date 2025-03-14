@@ -24,10 +24,10 @@ export default function CourseNavigation() {
         <>
             <div>
                 <Link to='/about-Us'>
-                    <button className="  font-lato text-lg  rounded-lg px-5 py-2">درباره ما</button>
+                    <button className="  font-lato text-lg dark:text-white  rounded-lg px-5 py-2">درباره ما</button>
                 </Link> 
                 <Link to='/allProduct'>
-                <button className="  font-lato rounded-lg text-lg  px-4 py-2">همه دوره ها</button> 
+                <button className="  font-lato dark:text-white  rounded-lg text-lg  px-4 py-2">همه دوره ها</button> 
                 </Link>
 
                 <div className="relative inline-block text-left">
@@ -35,7 +35,7 @@ export default function CourseNavigation() {
                         <button
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
-                            className="  font-lato text-lg rounded-lg px-4 py-2"
+                            className="  font-lato text-lg rounded-lg px-4 py-2 dark:text-white "
                         >
                             دوره های آموزشی
                         </button>
@@ -45,7 +45,7 @@ export default function CourseNavigation() {
                         <div
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
-                            className="absolute right-0 z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                            className="absolute right-0 z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 dark:bg-slate-800  ring-black ring-opacity-5"
                         >
                             <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                 <button className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">

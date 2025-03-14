@@ -1,5 +1,6 @@
 import HomeCart from "../cartButton/homeCart";
 import MessageBox from "../messageBox/messageBox";
+import HomeThemeSwitcher from "../ThemeSwitcher/homeTemSwicher";
 import UserMenu from "../UserMenu/userMenu";
 import { useUser } from "../userProfile/context";
 import Brand from "./brand";
@@ -17,7 +18,8 @@ export default function HomeHeder() {
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 <div className="relative flex ">
                    <UserMenu/> 
-                  <HomeCart/>
+                  <HomeCart/> 
+                  <HomeThemeSwitcher/>
                 </div>
                 <div className="relative z-10 flex justify-end gap-4 mr-24 text-white">
                   <CourseNavigation/> 
