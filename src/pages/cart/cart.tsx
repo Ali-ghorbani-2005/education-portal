@@ -20,17 +20,17 @@ export default function Cart() {
           </p>
         </div>
       ) : (
-        <div className="mt-5 flex gap-3 items-start justify-end">
+        <div className="mt-5 flex md:flex sm:grid sm:grid-cols-1 gap-3 items-start justify-end">
 
 
           {/* کادر جداگانه برای نمایش قیمت کل */}
-          <div className="bg-white dark:bg-slate-800 p-5 mr-20 rounded-lg shadow-lg w-[400px] h-fit"> 
+          <div className="bg-white dark:bg-slate-800 p-5 mr-20 rounded-lg shadow-lg w-[400px] h-fit hidden md:block"> 
             <div className="bg-green-500 rounded-t-lg">  
               <div className="flex justify-end mr-5">
               <img src="imgs/icons/card.png"  alt="" /> 
               </div>
             </div>
-            <h2 className="text-xl font-semibold text-right mb-4">مجموع قیمت</h2> 
+            <h2 className="text-xl font-semibold text-right mb-4 dark:text-white">مجموع قیمت</h2> 
             <div className="flex"> 
               
             <p className="text-2xl ml-3 font-bold text-gray-800 text-right dark:text-white">
@@ -51,7 +51,7 @@ export default function Cart() {
           </div>
 
           {/* کادر محصولات */}
-          <div className="bg-white dark:bg-slate-800 p-5 rounded-lg shadow-lg w-[800px]">
+          <div className="bg-white dark:bg-slate-800 p-5 rounded-lg shadow-lg w-[800px] md:w-[800px] sm:w-[400px] sm:-ml-2">
             <div className="bg-green-500 h-14 flex items-center px-4 rounded-t-lg">
               <p className="text-3xl text-white ">سبد خرید</p>
             </div>
@@ -75,10 +75,13 @@ export default function Cart() {
                       className="block md:hidden w-72 object-cover rounded-md"
                     />
                     <div>
-                      <p className="text-xl font-semibold dark:text-white">{item.product}</p>
-                      <p className="text-lg text-gray-700 dark:text-white">
-                        {Number(item.price).toLocaleString()} تومان
-                      </p>
+                      <p className="text-xl font-semibold sm:text-right dark:text-white">{item.product}</p> 
+                      <div className="flex gap-2 -ml-5"> 
+                        <p className="dark:text-green-500 mt-4">قیمت</p>
+                      <p className="text-lg mt-4 dark:text-green-500 text-green-600">
+                        {(item.price).toLocaleString()} 
+                      </p> 
+                      </div>
                     </div>
                     <img
                       src={item.img}
@@ -89,6 +92,33 @@ export default function Cart() {
                 </div>
               ))}
             </div>
+          </div> 
+
+
+          <div className="bg-white dark:bg-slate-800 p-5 -ml-2 rounded-lg shadow-lg w-[400px] h-fit block md:hidden"> 
+            <div className="bg-green-500 rounded-t-lg">  
+              <div className="flex justify-end mr-5">
+              <img src="imgs/icons/card.png"  alt="" /> 
+              </div>
+            </div>
+            <h2 className="text-xl font-semibold text-right mb-4">مجموع قیمت</h2> 
+            <div className="flex"> 
+              
+            <p className="text-2xl ml-3 font-bold text-gray-800 text-right dark:text-white">
+              {totalPrice.toLocaleString()} 
+            </p>  
+            <p className="ml-40 text-xl dark:text-white">مبلغ کل</p>
+            </div> 
+
+            <div className="flex mt-5 ml-5">
+            <p className="text-2xl font-bold text-gray-800 text-right dark:text-white">
+              0
+            </p>  
+            <p className="ml-40 text-xl dark:text-white">موجودی کیف پول</p>
+            </div>
+            <button className="w-full mt-4 bg-blue-600 text-white dark:text-white py-2 rounded-lg hover:bg-blue-700">
+              پرداخت
+            </button>
           </div>
 
         </div>
