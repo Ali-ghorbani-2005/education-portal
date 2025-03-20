@@ -62,7 +62,7 @@ export default function AllProduct() {
   return (
     <>
       <div className='flex'>
-        <div className="container mx-auto py-10 md:mr-28 ">
+        <div className="container mx-auto py-10 md:mr-28 sm:ml-4 ">
           <div className='flex justify-end '>
             <h2 className="text-3xl font-bold text-end mr-6 text-gray-700 dark:text-white">دوره ها</h2>
             <div className='bg-yellow-400 text-yellow-400 rounded-md w-5 h-5 mt-3 '>.</div>
@@ -70,9 +70,9 @@ export default function AllProduct() {
           <div className="grid grid-cols-1  md:ml-5  sm:grid-cols-1 sm:gap-10 sm: md:grid-cols-3 gap-5 mt-10">
             {filteredProducts.map((product) => (
               <div key={product.id} className="mx-2">
-                <div className="product-card bg-white dark:bg-slate-800 shadow-md w-56  md:w-72  rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+                <div className="product-card bg-white dark:bg-slate-800 shadow-md w-56  md:w-72 sm:w-96  rounded-lg overflow-hidden transition-transform transform hover:scale-105">
                   <div className="flex justify-center items-center p-2">
-                    {product.img && <img src={product.img} alt={product.product} className="w-80 h-32 object-cover rounded-lg" />}
+                    {product.img && <img src={product.img} alt={product.product} className="w-80 md:w-80 sm:w-96 h-32 object-cover rounded-lg" />}
                   </div>
 
                   <div className="text-right mt-2 px-3">
@@ -97,7 +97,7 @@ export default function AllProduct() {
 
                   <div className="flex justify-center mt-4 mb-2">
                     <Link to={`/information/${product.id}`}>
-                      <button className="font-bold w-52 md:w-64 bg-blue-500 dark:bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
+                      <button className="font-bold w-64 bg-blue-500 dark:bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
                         مشاهده
                       </button>
                     </Link>
@@ -108,9 +108,9 @@ export default function AllProduct() {
           </div>
         </div>
 
-        <div className='mt-28 mr-6'>
+        {/* <div className='mt-28 mr-6'>
           <FilterPanel onFilterChange={handleFilterChange} />
-        </div>
+        </div> */}
 
       </div>
     </>
