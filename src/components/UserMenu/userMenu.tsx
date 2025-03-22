@@ -30,10 +30,10 @@ export default function UserMenu() {
   }, [isOpen]);
 
   // بستن منو با کلیک روی دکمه بستن
-  const handleClose = (e: React.MouseEvent<HTMLButtonElement>): void => {
-    e.stopPropagation();
-    setIsOpen(false);
-  };
+  // const handleClose = (e: React.MouseEvent<HTMLButtonElement>): void => {
+  //   e.stopPropagation();
+  //   setIsOpen(false);
+  // };
 
   return (
     <div className="relative ml-4 user-menu">
@@ -48,23 +48,108 @@ export default function UserMenu() {
           </button>
 
           {isOpen && (
-            <div className="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg p-3 z-10 -ml-10">
-              <div className="flex justify-between items-center"> 
-                <p className="text-sm text-gray-700">نام کاربری: {user.name}</p>
-                <button
-                  className="text-gray-500 hover:text-red-500"
-                  onClick={handleClose}
-                >
-                  ❌
-                </button>
+            // <div className="absolute left-0 mt-2 w-72 bg-white dark:bg-slate-800 shadow-md rounded-lg p-3 z-10 -ml-10">
+            //   <div className="flex justify-between items-center">   
+            //     <div className=" ml-40">
+            //     <p className=" text-gray-700 text-xl dark:text-white">{user.name}</p>   
+            //     </div>
+
+            //     <div className="bg-gray-300 w-12 h-12 flex justify-center rounded-full">
+            //     <img src="imgs/user/user.png"  className="w-10 h-10 mt-1" alt="" /> 
+            //     </div>
+            //     {/* <button 
+            //       className="text-gray-500 hover:text-red-500"
+            //       onClick={handleClose}
+            //     >
+            //       ❌
+            //     </button> */}
+            //   </div>   
+
+            //   <div className="mt-2 text-right">
+            //     <p className="text-green-500 text-lg">موجودی:0</p>
+            //   </div>
+
+            //   <div className="border-b border-gray-400 mt-5"></div> 
+
+            //   <div>
+            //     <div className="flex justify-end gap-3 mt-4">  
+            //       <p className="mt-1">پیشخوان</p> 
+            //       <img src="imgs/user/home-1.png" alt="" />
+            //     </div> 
+
+            //     <div className="flex justify-end gap-3 mt-4">  
+            //       <p className="mt-1">دوره های من </p> 
+            //       <img src="imgs/user/folder.png" className="w-7" alt="" />
+            //     </div> 
+
+            //     <div className="flex justify-end gap-3 mt-4">  
+            //       <p className="mt-1"> جزیات حساب </p> 
+            //       <img src="imgs/user/user-2.png" className="w-7" alt="" />
+            //     </div>
+            //   </div> 
+
+
+            //   <div className="border-b border-gray-400 mt-5"></div> 
+
+            //     <div className="ml-48">
+            //   <button
+            //     className="mt-2 w-full flex gap-2   py-1 px-2 rounded hover:bg-red-600"
+            //     onClick={handleLogout}
+            //   > 
+            //     <p>خروج</p>
+            //     <img src="imgs/user/power.png" alt="" />
+            //   </button> 
+            //   </div>
+            // </div> 
+
+            <div className="absolute left-0 mt-2 w-72 bg-white dark:bg-slate-800 shadow-lg rounded-lg p-4 z-10 -ml-10">
+              {/* بخش بالایی: نام و تصویر کاربر */}
+              <div className="flex items-center justify-between">
+                <div className="text-right">
+                  <p className="text-gray-800 text-lg font-semibold dark:text-white">{user.name}</p>
+                </div>
+                <div className="bg-gray-200 dark:bg-gray-700 w-12 h-12 flex items-center justify-center rounded-full">
+                  <img src="imgs/user/user.png" className="w-10 h-10 rounded-full" alt="User" />
+                </div>
               </div>
+
+              {/* نمایش موجودی کاربر */}
+              <div className="mt-3 text-right">
+                <p className="text-green-500 text-sm font-medium">موجودی: 0</p>
+              </div>
+
+              {/* خط جداکننده */}
+              <div className="border-b border-gray-300 dark:border-gray-600 my-4"></div>
+
+              {/* لینک‌های داشبورد */}
+              <div className="space-y-3">
+                <div className="flex justify-end items-center gap-3 cursor-pointer hover:text-blue-500 transition">
+                  <p>پیشخوان</p>
+                  <img src="imgs/user/home-1.png" className="w-6" alt="Dashboard" />
+                </div>
+                <div className="flex justify-end items-center gap-3 cursor-pointer hover:text-blue-500 transition">
+                  <p>دوره‌های من</p>
+                  <img src="imgs/user/folder.png" className="w-6" alt="Courses" />
+                </div>
+                <div className="flex justify-end items-center gap-3 cursor-pointer hover:text-blue-500 transition">
+                  <p>جزئیات حساب</p>
+                  <img src="imgs/user/user-2.png" className="w-6" alt="Account" />
+                </div>
+              </div>
+
+              {/* خط جداکننده */}
+              <div className="border-b border-gray-300 dark:border-gray-600 my-4"></div>
+
+              {/* دکمه خروج */}
               <button
-                className="mt-2 w-full bg-red-500 text-white py-1 px-2 rounded hover:bg-red-600"
+                className="w-full flex justify-center items-center gap-2 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md transition"
                 onClick={handleLogout}
               >
-                خروج
+                <p>خروج</p>
+                <img src="imgs/user/power.png" className="w-5" alt="Logout" />
               </button>
             </div>
+
           )}
         </div>
       ) : (

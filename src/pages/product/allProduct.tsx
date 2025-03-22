@@ -108,9 +108,9 @@ export default function AllProduct() {
           </div>
         </div>
 
-        {/* <div className='mt-28 mr-6'>
+        <div className='mt-28 mr-6'>
           <FilterPanel onFilterChange={handleFilterChange} />
-        </div> */}
+        </div>
 
       </div>
     </>

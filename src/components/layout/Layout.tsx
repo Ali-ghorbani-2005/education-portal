@@ -106,8 +106,8 @@ export default function Layout() {
           
 
           {/* در سایز md و بزرگ‌تر، کامپوننت‌های دیگر نمایش داده می‌شوند */}
-          <div className="hidden md:flex gap-10">
-            <div className="-mt-4 ml-4">
+          <div className="hidden ml-24 mt-1 md:flex gap-10">
+            <div className="-mt-4 -ml-4">
               <LayoutAuthentication />
             </div>
 
