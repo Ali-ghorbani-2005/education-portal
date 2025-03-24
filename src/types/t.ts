@@ -1,13 +1,26 @@
+// export interface ProductCardProps {
+//     id: number;
+//     product: string;
+//     information: string;
+//     price: string;
+//     img: string;
+//     teacher: string;
+//     time: number;
+//     Student: number;
+// } 
+
+
+
 export interface ProductCardProps {
     id: number;
     product: string;
-    information: string;
-    price: string;
     img: string;
     teacher: string;
-    time: number;
-    Student: number;
-}
+    time: string;
+    price: number; // اطمینان از اینکه price نوع number است
+    information: string;
+    Student: number; // یا string بر اساس نیاز شما
+  }
 
 
 
@@ -47,4 +60,21 @@ export interface Product {
   Free?: number;
   Sale?: number;
   off?: number;
-}
+} 
+
+
+
+
+// در فایل types.ts یا هر نام دیگری
+export interface Product {
+    id: number;
+    product: string;
+    img: string;
+    teacher: string;
+    time: string;
+    price: number;
+    information: string; 
+    Student: number; 
+  }
+  
+ 
