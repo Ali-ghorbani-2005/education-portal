@@ -6,7 +6,7 @@ import LearningPathSection from "../../components/learningPathSection/learningPa
 import FetchProduct from "../../components/productComponent/fetchProduct";
 import ProductButton from "../../components/productComponent/productButton";
 import SliderProduct from "../../components/productComponent/sliderProduct";
-import SliderImg from "../../components/slider/slider";
+import SliderImg from "../../components/imgSlider/slider";
 
 
 export default function Home() {

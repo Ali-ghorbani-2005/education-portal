@@ -17,17 +17,6 @@ export default function Loader() {
                 
                 <p className='text-3xl font-lato'>در حال بارگذاری</p>
             </div>
-            {/* <div className="loader">
-                <div className="outer-circle">
-                    <div className="inner-circle"></div>
-                </div>
-                <p className='text-3xl font-lato'>در حال بارگذاری</p>
-            </div> */}
-
-            {/* <div className="loader">
-                <div className="spinner"></div>
-                <p className='text-2xl font-lato'>در حال بارگذاری...</p>
-            </div> */}
         </>
     )
 }

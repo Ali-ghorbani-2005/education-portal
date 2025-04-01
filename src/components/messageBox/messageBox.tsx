@@ -23,18 +23,18 @@ const MessageBox: React.FC = () => {
         <>
             {isVisible && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-                    <div className="bg-white w-96 p-6 rounded-lg shadow-2xl relative transform transition-transform duration-300 animate-slide-up">
-                        <p className="mb-4 text-center text-2xl font-katibeh text-gray-800">
+                    <div className="bg-white dark:bg-slate-800 w-96 p-6 rounded-lg shadow-2xl relative transform transition-transform duration-300 animate-slide-up">
+                        <p className="mb-4 text-center text-2xl font-katibeh text-gray-800 dark:text-white">
                             به وب‌سایت دانش پلاس خوش آمدید
                         </p>
 
-                        <p className="mb-5 text-center font-katibeh text-lg text-gray-600">
+                        <p className="mb-5 text-center font-katibeh text-lg text-gray-600 dark:text-gray-400">
                             لطفاً ابتدا وارد شوید
                         </p>
 
                         <button
                             onClick={handleClose}
-                            className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 text-xl"
+                            className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 dark:hover:text-gray-500 text-xl"
                         >
                             ×
                         </button>

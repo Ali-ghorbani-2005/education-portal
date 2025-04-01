@@ -99,7 +99,7 @@ export default function Login() {
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col sm:flex-row items-center gap-8 w-full max-w-4xl">
         <img src="imgs/bg/login-bg.png" className="w-60 sm:hidden md:block md:w-[500px]" alt="Login Background" />
         <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 w-full max-w-sm">
-          <h2 className="text-center text-2xl sm:text-3xl  text-gray-800 mb-4"><Brand/></h2>
+          <h2 className="text-center text-2xl sm:text-3xl  text-gray-800 mb-4"><Brand /></h2>
           <p className="text-center text-gray-600 mb-6">ورود به حساب کاربری</p>
           <div className="mt-4">
             <input
@@ -129,28 +129,4 @@ export default function Login() {
       </form>
     </div>
   );
-}
-
-
-
-
-
-
-
-
-
-
-// const { handleSubmit, register, setError } = useForm();
-// const navigate = useNavigate();
-
-// const onSubmit = async (data: any) => {
-//   const result = await loginUser(data.name, data.password);
-
-//   if (result.success) {
-//     alert(result.message);
-//     navigate('/');  // هدایت به صفحه خانه
-//   } else {
-//     setError('name', { type: 'manual', message: result.message });
-//     setError('password', { type: 'manual', message: result.message });
-//   }
-// }; 
+} 
