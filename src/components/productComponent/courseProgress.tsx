@@ -6,7 +6,7 @@ export default function CourseProgress() {
 
       
 
-<div className="bg-white dark:bg-slate-800 shadow-md w-[350px] h-48 rounded-xl p-4 mt-5 transition-all duration-300 hover:shadow-lg">
+<div className="bg-white sm:hidden md:block dark:bg-slate-800 shadow-md w-[350px] h-48 rounded-xl p-4 mt-5 transition-all duration-300 hover:shadow-lg">
 
 <div className="flex justify-between mb-3">
 

@@ -2,7 +2,7 @@ const API_URL = "http://localhost:3000/product";
 
 // تعریف نوع داده‌ای برای محصولات
 interface Product {
-    id: number;
+    id: string;
     product: string;
     img: string;
     teacher: string;
