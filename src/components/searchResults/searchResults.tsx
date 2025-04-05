@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from "framer-motion"; 
 
 // تعریف نوع برای محصول
 interface Product {
@@ -37,7 +38,15 @@ export default function SearchResults() {
         fetchResults();
     }, [query]);
 
-    return (
+    return (  
+
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="product-detail rounded-lg p-6"
+      >
+
         <div className="p-6">
             <h2 className="text-3xl font-semibold text-right text-gray-700 mr-10 dark:text-white "> جستجو : {query}</h2>
             {results.length > 0 ? (
@@ -89,7 +98,8 @@ export default function SearchResults() {
                     </div>
                 </div>
             )}
-        </div>
+        </div> 
+        </motion.div>
 
     );
 }

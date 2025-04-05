@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchData } from '../../services/fetchData';
 import CourseProgress from '../../components/productComponent/courseProgress';
-import { useCart } from '../../components/context/cartContext';
+import { useCart } from '../../components/context/cartContext'; 
+import { motion } from "framer-motion";
 
 interface Product {
-    id: number; // یا string (بسته به نوع آیدی شما)
+    id: string; // یا string (بسته به نوع آیدی شما)
     product: string;
     img: string;
     teacher: string;
@@ -22,12 +23,37 @@ export default function Information() {
     const [error, setError] = useState<string | null>(null);
     const { addToCart } = useCart();
 
+    // useEffect(() => {
+    //     const fetchProduct = async () => {
+    //         try {
+    //             const data: Product[] = await fetchData();
+    //             if (id) { // بررسی اینکه آیا id موجود است
+    //                 const foundProduct = data.find(item => item.id === id);
+    //                 if (foundProduct) {
+    //                     setProduct(foundProduct);
+    //                 } else {
+    //                     setError("Product not found");
+    //                 }
+    //             } else {
+    //                 setError("Invalid product ID");
+    //             }
+    //         } catch (err) {
+    //             setError((err as Error).message);
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     };
+
+    //     fetchProduct();
+    // }, [id]); 
+
     useEffect(() => {
+        window.scrollTo(0, 0); // اضافه کن: صفحه رو می‌بره بالا
         const fetchProduct = async () => {
             try {
                 const data: Product[] = await fetchData();
-                if (id) { // بررسی اینکه آیا id موجود است
-                    const foundProduct = data.find(item => item.id === parseInt(id));
+                if (id) {
+                    const foundProduct = data.find(item => item.id === id);
                     if (foundProduct) {
                         setProduct(foundProduct);
                     } else {
@@ -42,9 +68,10 @@ export default function Information() {
                 setLoading(false);
             }
         };
-
+    
         fetchProduct();
     }, [id]);
+    
 
     if (loading) {
         return <div>Loading...</div>;
@@ -54,7 +81,15 @@ export default function Information() {
         return <div>Error: {error}</div>;
     }
 
-    return (
+    return ( 
+        <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="product-detail rounded-lg p-6"
+>
+  {/* کل محتوای محصول داخل این قرار می‌گیره */}
+
         <div className="">
             {product && (
                 <div className="product-detail   rounded-lg p-6">
@@ -152,30 +187,6 @@ export default function Information() {
                         </div>
 
                     </div>
-
-                    {/* <div className='flex justify-end mt-20 sm:ml-5 '> 
-                        <div className='bg-white dark:bg-slate-800 w-[760px] md:w-[760px] sm:w-[600px]  h-[700px]'>
-
-                            <div className='text-3xl flex justify-end'>
-                                <p className='dark:text-white '>توضیحات</p>
-                                <img src="/imgs/icons/playlist.png" className='w-14' alt="" />
-                            </div>
-
-                            <div className='mt-5 flex justify-center items-center sm:ml-20'>
-                                <img src={product.img} alt={product.product} className=" md:w-[640px] sm:w-[400px] rounded-lg" />
-
-                            </div>
-
-                            <div className='mt-10'>
-                                 
-                                 <div className='text-right w-[700px] ml-10 '>
-                                <p className='text-xl text-gray-500 font-serif dark:text-white'>{product.Description}</p> 
-                                </div>
-                            </div>
-
-                        </div> 
-                    </div> */}
-
                     <div className="flex justify-center mt-20 px-4">
                         <div className="bg-white dark:bg-slate-800 w-full max-w-[760px] sm:max-w-[600px] rounded-lg shadow-lg p-6">
 
@@ -204,7 +215,9 @@ export default function Information() {
                     </div>
                 </div>
             )}
-        </div>
+        </div> 
+
+        </motion.div>
     );
 }
 

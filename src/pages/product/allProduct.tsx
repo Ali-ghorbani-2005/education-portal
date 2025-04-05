@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { fetchData } from "../../services/fetchData";
 import { Link } from "react-router-dom";
 import FilterPanel from "../../components/filterPanel/filterPanel";
-import { Product } from "../../types/t";
+import { Product } from "../../types/t"; 
+import { motion } from "framer-motion";
 
 export default function AllProduct() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -12,6 +13,11 @@ export default function AllProduct() {
   const [error, setError] = useState<string | null>(null);
   const [filters, setFilters] = useState({ Free: false, sale: false, off: false });
   console.log(filters)
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // وقتی وارد صفحه میشه، اسکرول بره بالا
+  }, []);
+
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -60,7 +66,13 @@ export default function AllProduct() {
   }
 
   return (
-    <>
+    <> 
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="product-detail gap-5 "
+      >
       <div className='flex'>
         <div className="container mx-auto py-10 md:mr-28 sm:ml-4 ">
           <div className='flex justify-end '>
@@ -112,7 +124,8 @@ export default function AllProduct() {
           <FilterPanel onFilterChange={handleFilterChange} />
         </div>
 
-      </div>
+      </div> 
+      </motion.div>
     </>
   );
 }

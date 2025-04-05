@@ -8,10 +8,10 @@ import ProductButton from "../../components/productComponent/productButton";
 import SliderProduct from "../../components/productComponent/sliderProduct";
 import SliderImg from "../../components/imgSlider/slider";
 
-
 export default function Home() {
   return ( 
-    <> 
+    <>  
+ 
     <div className="bg-gray-100 dark:bg-slate-900 ">
     <div>
       <HomeHeder/> 
@@ -46,7 +46,7 @@ export default function Home() {
       </div>
 
       </div>  
-
+      
      
       <div className=" ">
         <Footer/>

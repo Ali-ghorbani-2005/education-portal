@@ -1,8 +1,14 @@
-
+import { motion } from "framer-motion";
 
 export default function AboutUs() {
   return (
-    <>
+    <> 
+           <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="product-detail rounded-lg p-6"
+>
       <div className="max-w-4xl  mx-auto p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg ">
         <div className="flex flex-col items-center text-center">
           <h1 className="text-3xl font-gulzar mb-6 dark:text-white ">هدف ما</h1>
@@ -17,7 +23,8 @@ export default function AboutUs() {
           </p>
           <img src="imgs/icons/code typing.png" className="w-64 mt-6 rounded-lg shadow-md" alt="Code Typing" />
         </div>
-      </div>
+      </div> 
+      </motion.div>
     </>
   )
 }

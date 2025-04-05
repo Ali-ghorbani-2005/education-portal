@@ -1,7 +1,8 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import { submitSignUp } from '../../services/authenticationServices';
+import { submitSignUp } from '../../services/authenticationServices'; 
+import { motion } from "framer-motion";
 
 interface FormValues {
   name: string;
@@ -43,8 +44,15 @@ const SignUp: React.FC = () => {
     },
   });
 
-  return (
-    <div className="min-h-screen bg-blue-400 flex items-center justify-center p-4">
+  return ( 
+ 
+    <div className="min-h-screen bg-blue-400 flex items-center justify-center p-4"> 
+   <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, ease: "easeOut" }}
+    className="product-detail rounded-lg p-6"
+  >
       <div className="grid grid-cols-1 md:grid-cols-2 items-center max-w-4xl w-full bg-white shadow-xl rounded-lg overflow-hidden">
         <div className="hidden md:flex justify-center">
           <img src="imgs/bg/singup-bg.png" className="w-[600px]" alt="Signup Background" />
@@ -95,8 +103,10 @@ const SignUp: React.FC = () => {
             <a href="/login" className="text-blue-600 hover:underline"> ورود به حساب کاربری</a>
           </p>
         </div>
-      </div>
-    </div>
+      </div> 
+      </motion.div>
+    </div> 
+    
   );
 };
 
