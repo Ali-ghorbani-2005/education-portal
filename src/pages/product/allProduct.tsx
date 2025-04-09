@@ -7,63 +7,144 @@ import { Product } from "../../types/t";
 import { motion } from "framer-motion";
 
 export default function AllProduct() {
+  // const [products, setProducts] = useState<Product[]>([]);
+  // const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  // const [loading, setLoading] = useState(true);
+  // const [error, setError] = useState<string | null>(null);
+  // const [filters, setFilters] = useState({ Free: false, sale: false, off: false });
+  // console.log(filters)
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // وقتی وارد صفحه میشه، اسکرول بره بالا
+  // }, []);
+
+  // useEffect(() => {
+  //   const loadData = async () => {
+  //     try {
+  //       const data = await fetchData();
+  
+  //       // تطبیق دستی داده‌ها
+  //       const fixedData = data.map((item: any) => ({
+  //         ...item,
+  //         Student: item.Student ?? item.student ?? 0, // اضافه‌کردن Student اگر نبود
+  //       }));
+  
+  //       setProducts(fixedData);
+  //       setFilteredProducts(fixedData);
+  //       setLoading(false);
+  //     } catch (err: any) {
+  //       setError(err.message);
+  //       setLoading(false);
+  //     }
+  //   };
+  
+  //   loadData();
+  // }, []);
+  
+
+  
+  // // تابع اعمال فیلترها
+  // const applyFilters = (filters: { free: boolean; sale: boolean; off: boolean }) => {
+  //   let filtered = products;
+
+  //   if (filters.free) {
+  //     filtered = filtered.filter((product) => product.Free === 1);
+  //   }
+  //   if (filters.sale) {
+  //     filtered = filtered.filter((product) => product.Sale === 55);
+  //   }
+  //   if (filters.off) {
+  //     filtered = filtered.filter((product) => product.off === 123);
+  //   }
+
+  //   setFilteredProducts(filtered);
+  // };
+
+  // // بروزرسانی فیلترها
+  // const handleFilterChange = (newFilters: { free: boolean; sale: boolean; off: boolean }) => {
+  //   setFilters(newFilters);
+  //   applyFilters(newFilters);
+  // };
+
+  // if (loading) {
+  //   return <div>در حال بارگذاری...</div>;
+  // }
+
+  // if (error) {
+  //   return <div>خطا در بارگذاری داده‌ها: {error}</div>;
+  // } 
+
+
+
   const [products, setProducts] = useState<Product[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [filters, setFilters] = useState({ Free: false, sale: false, off: false });
-  console.log(filters)
+const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+const [loading, setLoading] = useState(true);
+const [error, setError] = useState<string | null>(null);
+const [filters, setFilters] = useState({ free: false, sale: false, off: false });
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // وقتی وارد صفحه میشه، اسکرول بره بالا
-  }, []);
+console.log(filters);
 
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const data = await fetchData();
-        setProducts(data);
-        setFilteredProducts(data);
-        setLoading(false);
-      } catch (err: any) {
-        setError(err.message);
-        setLoading(false);
-      }
-    };
+useEffect(() => {
+  window.scrollTo(0, 0); // وقتی وارد صفحه میشه، اسکرول بره بالا
+}, []);
 
-    loadData();
-  }, []);
+useEffect(() => {
+  const loadData = async () => {
+    try {
+      const data = await fetchData();
 
-  // تابع اعمال فیلترها
-  const applyFilters = (filters: { free: boolean; sale: boolean; off: boolean }) => {
-    let filtered = products;
+      // تطبیق دستی داده‌ها
+      const fixedData = data.map((item: any) => ({
+        ...item,
+        student: item.Student ?? item.student ?? 0,
+        free: item.Free ?? 0,
+        sale: item.Sale ?? 0,
+        off: item.off ?? 0,
+      }));
 
-    if (filters.free) {
-      filtered = filtered.filter((product) => product.Free === 1);
+      setProducts(fixedData);
+      setFilteredProducts(fixedData);
+      setLoading(false);
+    } catch (err: any) {
+      setError(err.message);
+      setLoading(false);
     }
-    if (filters.sale) {
-      filtered = filtered.filter((product) => product.Sale === 55);
-    }
-    if (filters.off) {
-      filtered = filtered.filter((product) => product.off === 123);
-    }
-
-    setFilteredProducts(filtered);
   };
 
-  // بروزرسانی فیلترها
-  const handleFilterChange = (newFilters: { free: boolean; sale: boolean; off: boolean }) => {
-    setFilters(newFilters);
-    applyFilters(newFilters);
-  };
+  loadData();
+}, []);
 
-  if (loading) {
-    return <div>در حال بارگذاری...</div>;
+// تابع اعمال فیلترها
+const applyFilters = (filters: { free: boolean; sale: boolean; off: boolean }) => {
+  let filtered = products;
+
+  if (filters.free) {
+    filtered = filtered.filter((product) => product.free === 1);
+  }
+  if (filters.sale) {
+    filtered = filtered.filter((product) => product.sale === 55);
+  }
+  if (filters.off) {
+    filtered = filtered.filter((product) => product.off === 123);
   }
 
-  if (error) {
-    return <div>خطا در بارگذاری داده‌ها: {error}</div>;
-  }
+  setFilteredProducts(filtered);
+};
+
+// بروزرسانی فیلترها
+const handleFilterChange = (newFilters: { free: boolean; sale: boolean; off: boolean }) => {
+  setFilters(newFilters);
+  applyFilters(newFilters);
+};
+
+if (loading) {
+  return <div>در حال بارگذاری...</div>;
+}
+
+if (error) {
+  return <div>خطا در بارگذاری داده‌ها: {error}</div>;
+}
+
 
   return (
     <> 

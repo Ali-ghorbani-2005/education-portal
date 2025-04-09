@@ -92,11 +92,11 @@ export default function Roadmap() {
                     <img src="/imgs/icons/map.png" className="w-full h-80 object-cover rounded-2xl shadow-md" alt="Map" />
 
                     <div className="space-y-4">
-                        <h2 className="text-3xl font-bold text-right">مسیر یادگیری برنامه نویسی</h2>
-                        <p className="text-lg text-right leading-relaxed">
+                        <h2 className="text-3xl font-bold text-right dark:text-white">مسیر یادگیری برنامه نویسی</h2>
+                        <p className="text-lg text-right leading-relaxed dark:text-white">
                             برنامه نویسی شغل سختی است یا راحت؟! چه چیزهایی را باید آموزش دید و چقدر طول می‌کشد تا به یک برنامه نویس تبدیل شویم؟ اینجا بهترین مسیر یادگیری برنامه نویسی را به شما گفته ایم
                         </p>
-                        <p className="text-right font-medium text-gray-800">
+                        <p className="text-right font-medium text-gray-800 dark:text-gray-400">
                             اگر شما هم علاقه‌مند به آشنایی با مسیر یادگیری برنامه‌نویسی هستید، بدون شک این موضوع را شنیده‌اید که برنامه‌نویسی یک شغل بسیار پول‌ساز است...
                         </p>
                     </div>
@@ -105,13 +105,13 @@ export default function Roadmap() {
 
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold text-blue-600 text-right">سوالات رایج در حوزه برنامه‌نویسی</h3>
-                        <p className="font-bold text-right">قبل از صحبت درباره مسیر یادگیری، اجازه دهید تا برخی از سوالات رایج را مطرح کنیم:</p>
-                        <ul className="list-disc list-inside text-right text-sm text-gray-700 space-y-2">
+                        <p className="font-bold text-right dark:text-white">قبل از صحبت درباره مسیر یادگیری، اجازه دهید تا برخی از سوالات رایج را مطرح کنیم:</p>
+                        <ul className="list-disc list-inside text-right text-sm text-gray-700 dark:text-gray-400 space-y-2">
                             <li>آیا برای یادگیری آن نیازمند دانش زبان انگلیسی هستیم؟</li>
                             <li>آیا دانش ریاضی ما باید در سطح بالایی قرار داشته باشد؟</li>
                             <li>سن ما برای یادگیری برنامه‌نویسی بالا نیست؟</li>
                         </ul>
-                        <p className="text-right font-bold text-gray-800">
+                        <p className="text-right font-bold text-gray-800 dark:text-white">
                             برای یادگیری برنامه‌نویسی به مدرک زبان نیاز نیست و با دانش ابتدایی هم می‌توانید به مباحث مربوط به این حوزه تسلط پیدا کنید.
                         </p>
                     </div>
@@ -120,7 +120,7 @@ export default function Roadmap() {
 
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold text-blue-600 text-right">یک نکته کلیدی برای یادگیری برنامه‌نویسی</h3>
-                        <p className="text-right font-bold text-gray-800">
+                        <p className="text-right font-bold text-gray-800 dark:text-white">
                             یادگیری برنامه‌نویسی کار ساده‌ای نیست و نیاز به تمرین مداوم دارد. صبر و حوصله کلید موفقیت شماست.
                         </p>
                     </div>

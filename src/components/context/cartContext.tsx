@@ -1,8 +1,18 @@
 import { createContext, useContext, useState, ReactNode, useEffect } from "react";
 
+// interface CartItem {
+//   id: string;
+//   name: string; 
+//   product: string; 
+//   price: number;
+//   quantity: number;
+// } 
+
+
 interface CartItem {
   id: string;
-  name: string;
+  product: string;  // اینجا فیلد product را اضافه می‌کنیم
+  img: string;
   price: number;
   quantity: number;
 }

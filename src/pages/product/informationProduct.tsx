@@ -5,53 +5,30 @@ import CourseProgress from '../../components/productComponent/courseProgress';
 import { useCart } from '../../components/context/cartContext'; 
 import { motion } from "framer-motion";
 
-interface Product {
-    id: string; // یا string (بسته به نوع آیدی شما)
+export interface ProductData {
+    id: string;
     product: string;
     img: string;
     teacher: string;
     time: string;
     price: number;
-    information: string;
-    Description: string;
+    information: string; 
+    // Description: string;
+    // احتمالاً Description توی API نیست
 }
 
 export default function Information() {
     const { id } = useParams<{ id: string }>();
-    const [product, setProduct] = useState<Product | null>(null);
+    const [product, setProduct] = useState<ProductData | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
     const { addToCart } = useCart();
-
-    // useEffect(() => {
-    //     const fetchProduct = async () => {
-    //         try {
-    //             const data: Product[] = await fetchData();
-    //             if (id) { // بررسی اینکه آیا id موجود است
-    //                 const foundProduct = data.find(item => item.id === id);
-    //                 if (foundProduct) {
-    //                     setProduct(foundProduct);
-    //                 } else {
-    //                     setError("Product not found");
-    //                 }
-    //             } else {
-    //                 setError("Invalid product ID");
-    //             }
-    //         } catch (err) {
-    //             setError((err as Error).message);
-    //         } finally {
-    //             setLoading(false);
-    //         }
-    //     };
-
-    //     fetchProduct();
-    // }, [id]); 
 
     useEffect(() => {
         window.scrollTo(0, 0); // اضافه کن: صفحه رو می‌بره بالا
         const fetchProduct = async () => {
             try {
-                const data: Product[] = await fetchData();
+                const data: ProductData[] = await fetchData();
                 if (id) {
                     const foundProduct = data.find(item => item.id === id);
                     if (foundProduct) {
@@ -71,6 +48,8 @@ export default function Information() {
     
         fetchProduct();
     }, [id]);
+    
+    
     
 
     if (loading) {
@@ -122,10 +101,6 @@ export default function Information() {
                             </button>
                         </div>
                     </div>
-
-
-
-
                     <div className='flex gap-80'>
 
                         <div className='mt-10'>
@@ -203,9 +178,9 @@ export default function Information() {
 
                             {/* توضیحات محصول */}
                             <div className="mt-10">
-                                <p className="text-xl text-gray-600 dark:text-white font-serif leading-relaxed text-right">
+                                {/* <p className="text-xl text-gray-600 dark:text-white font-serif leading-relaxed text-right">
                                     {product.Description}
-                                </p>
+                                </p> */}
                             </div>
 
                         </div>

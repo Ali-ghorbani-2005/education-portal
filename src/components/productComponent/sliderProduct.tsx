@@ -21,11 +21,37 @@ export default function SliderProduct() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
+  // useEffect(() => {
+  //   const loadData = async () => {
+  //     try {
+  //       const result: Product[] = await fetchData(); // اطمینان از نوع بازگشتی
+  //       const filteredProducts = result.filter(product => product.id >= 13 && product.id <= 18);
+  //       setProducts(filteredProducts);
+  //     } catch (err: any) {
+  //       setError(err.message);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  //   loadData();
+  // }, []); 
+
   useEffect(() => {
     const loadData = async () => {
       try {
-        const result: Product[] = await fetchData(); // اطمینان از نوع بازگشتی
-        const filteredProducts = result.filter(product => product.id >= 13 && product.id <= 18);
+        const result = await fetchData();
+  
+        // نرمال‌سازی داده‌ها (تبدیل مقادیر به number)
+        const normalizedData: Product[] = result.map((item: any) => ({
+          ...item,
+          id: Number(item.id),
+          price: Number(item.price),
+          Student: Number(item.Student),
+        }));
+  
+        const filteredProducts = normalizedData.filter(
+          product => product.id >= 13 && product.id <= 18
+        );
         setProducts(filteredProducts);
       } catch (err: any) {
         setError(err.message);
@@ -35,6 +61,7 @@ export default function SliderProduct() {
     };
     loadData();
   }, []);
+  
 
   if (loading) {
     return <div>در حال بارگذاری...</div>;

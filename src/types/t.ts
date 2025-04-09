@@ -44,8 +44,8 @@ export interface Product {
   img: string;
   price: number;
   Student: number;
-  Free?: number;
-  Sale?: number;
+  free?: number;
+  sale?: number;
   off?: number;
 }
 
