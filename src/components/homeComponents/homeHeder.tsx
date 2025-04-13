@@ -34,7 +34,7 @@ export default function HomeHeder() {
                   <HomeThemeSwitcher/> 
                   </div> 
                 </div>
-                <div className="relative z-10  mr-24 -mt-5 text-white sm:hidden md:block "> 
+                <div className="relative z-10  mr-24 -mt-5 text-white sm:hidden  md:block "> 
                     <div className="flex justify-end gap-4 ">
                   <CourseNavigation/> 
                   <Brand/> 

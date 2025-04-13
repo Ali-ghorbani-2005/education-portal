@@ -128,8 +128,8 @@ export default function Roadmap() {
 
                 {/* سایدبار */}
                 <aside className="lg:w-2/5 space-y-4">
-                    <h2 className="text-2xl font-light text-right">موضوعات ویژه</h2>
-                    <p className="text-xl font-light text-right">موضوع موردعلاقه‌ات را انتخاب کن</p>
+                    <h2 className="text-2xl font-light text-right dark:text-white ">موضوعات ویژه</h2>
+                    <p className="text-xl font-light text-right dark:text-white">موضوع موردعلاقه‌ات را انتخاب کن</p>
 
                     {[
                         { title: "مسیر یادگیری برنامه نویسی موبایل", teacher: "ساسان صفری", icon: "/imgs/icons/mobile.png", bgColor: "bg-blue-500" },

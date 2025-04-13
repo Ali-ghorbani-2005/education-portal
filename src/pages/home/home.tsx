@@ -1,4 +1,3 @@
-// import Communication from "../../components/Communication/Communication";
 import Footer from "../../components/footer/footer";
 import HomeHeder from "../../components/homeComponents/homeHeder";
 import LearningPathComponent from "../../components/learningPathComponent/learningPathComponent";
@@ -12,7 +11,7 @@ export default function Home() {
   return ( 
     <>  
  
-    <div className="bg-gray-100 dark:bg-slate-900 ">
+    <div className="bg-gray-100 dark:bg-slate-900  ">
     <div>
       <HomeHeder/> 
     </div>  
