@@ -74,14 +74,14 @@ export default function Information() {
                 <div className="product-detail   rounded-lg p-6">
                     <h2 className="text-4xl font-lato text-right dark:text-white">{product.product}</h2>
                     <div className=''>
-                        <div className='flex md:flex sm:grid'>
-                            <img src={product.img} alt={product.product} className="md:w-[650px] md:h-80  sm:w-[400px] sm:h-60  h-80 object-cover rounded-lg mt-5  md:ml-7 sm:-ml-2" />
-                            <div className=' md:w-[450px] sm:w-[400px]  md:ml-52 sm:-ml-2 mt-4 '>
+                        <div className='lg:flex md:grid sm:grid'>
+                            <img src={product.img} alt={product.product} className="md:w-[650px] lg:w-[650px] lg:h-80 md:h-80  sm:w-[400px] sm:h-60  h-80 object-cover rounded-lg mt-5  md:ml-7 sm:-ml-2" />
+                            <div className=' md:w-[450px]  lg:w-[450px] sm:w-[400px]  md:ml-52 lg:ml-52  sm:-ml-2 mt-4 '>
                                 <p className="mt-4  text-right  text-xl text-gray-600 font-lato dark:text-white">{product.information}</p>
                             </div>
                         </div>
 
-                        <div className=' md:flex  gap-3 justify-center items-center  md:ml-[500px] md:-mt-20 '>
+                        <div className=' md:flex lg:flex  gap-3 justify-center items-center  md:justify-center lg:ml-[500px] md:mt-5 lg:-mt-20 '>
                             <div className='sm:flex '>
                                 <p className='font-katibeh text-2xl mt-2 dark:text-white'>تومان</p>   <p className="dark:text-white text-3xl font-lato mt-4"> {product.price} </p>
                             </div>
@@ -101,16 +101,16 @@ export default function Information() {
                             </button>
                         </div>
                     </div>
-                    <div className='flex gap-80'>
+                    <div className='flex lg:flex md:grid gap-80'>
 
                         <div className='mt-10'>
                             <CourseProgress />
                         </div>
 
-                        <div className='flex justify-center mt-20  md:-ml-40 sm:-ml-[350px] '>
-                            <div className='grid md:grid-cols-3 sm:grid-cols-2  gap-5 p-4  md:w-[800px] sm:w-[450px] '>
+                        <div className='flex justify-center mt-20 lg:mt-20  md:-ml-14 md:-mt-52 lg:-ml-40 sm:-ml-[350px] '>
+                            <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2  gap-5 p-4  md:w-[800px] lg:w-[800px]  sm:w-[450px] '>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 md:w-60 sm:w-48 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 md:w-52 lg:w-60 sm:w-48 h-20 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>نوع مشاهده</p>
                                         <p className="text-sm text-gray-500 dark:text-white">ویدیو</p>
@@ -118,7 +118,7 @@ export default function Information() {
                                     <img src="/imgs/icons/camera.png" className='w-12 h-12' alt="View Type Icon" />
                                 </div>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-52 lg:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>مدت زمان دوره</p>
                                         <p className="text-sm text-gray-500 dark:text-white">{product.time}</p>
@@ -126,7 +126,7 @@ export default function Information() {
                                     <img src="/imgs/icons/clock-2.png" className='w-12 h-12' alt="Time Icon" />
                                 </div>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-52 lg:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>بروزرسانی</p>
                                         <p className="text-sm text-gray-500 dark:text-white">1403/10/30</p>
@@ -134,7 +134,7 @@ export default function Information() {
                                     <img src="/imgs/icons/calendar.png" className='w-12 h-12' alt="Update Icon" />
                                 </div>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-52 lg:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>مدرس</p>
                                         <p className="text-sm text-gray-500 dark:text-white">{product.teacher}</p>
@@ -142,7 +142,7 @@ export default function Information() {
                                     <img src="/imgs/icons/school.png" className='w-12 h-12' alt="Teacher Icon" />
                                 </div>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-52 lg:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>وضعیت دوره</p>
                                         <p className="text-sm text-gray-500 dark:text-white">تکمیل</p>
@@ -150,7 +150,7 @@ export default function Information() {
                                     <img src="/imgs/icons/status.png" className='w-12 h-12' alt="Status Icon" />
                                 </div>
 
-                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
+                                <div className='bg-white dark:bg-slate-800 shadow-lg w-60 h-20 md:w-52 lg:w-60 sm:w-48 rounded-lg flex items-center justify-between p-4 transition-transform transform hover:scale-105'>
                                     <div>
                                         <p className='text-lg font-lato dark:text-white'>پیش نیاز</p>
                                         <p className="text-sm text-gray-500 dark:text-white">HTML</p>

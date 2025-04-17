@@ -5,7 +5,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
     return (
         <>
             <div className="mt-4 mx-2">
-                <div className="product-card bg-white dark:bg-slate-800 shadow-md rounded-lg w-72 md:w-72 sm:w-96 overflow-hidden transition-transform transform hover:scale-105">
+                <div className="product-card bg-white dark:bg-slate-800 shadow-md rounded-lg w-72 lg:w-72 md:w-60 sm:w-96 overflow-hidden transition-transform transform hover:scale-105">
                     <div className="flex justify-center items-center p-2">
                         {img && <img src={img} alt={product} className="w-80 md:w-80 sm:w-96 h-32 md:h-32 sm:h-36 object-cover rounded-lg" />}
                     </div>
@@ -33,7 +33,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, price, img, teacher,
 
                     <div className="flex justify-center mt-2 mb-2">
                         <Link to={`/information/${id}`}>
-                            <button className="font-bold w-64 bg-blue-500 dark:bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
+                            <button className="font-bold w-64 lg:w-64  md:w-56 bg-blue-500 dark:bg-red-600 text-white px-3 py-1 rounded-lg hover:bg-blue-600 transition-colors">
                                 مشاهده
                             </button>
                         </Link>

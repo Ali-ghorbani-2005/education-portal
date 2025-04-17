@@ -131,7 +131,7 @@ export default function FetchProduct() {
           راهی به سوی موفقیت شما
         </p>
       </div>
-      <div className="grid grid-cols-4 md:grid-cols-4 sm:grid-cols-1 gap-4 p-4">
+      <div className="grid grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 md:gap-6 lg:gap-4 p-4">
         {data.map((product) => (
           <div key={product.id}>
             <ProductCard {...product} Student={0} />

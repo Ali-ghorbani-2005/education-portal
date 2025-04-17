@@ -161,10 +161,10 @@ export default function Cart() {
           </p>
         </div>
       ) : (
-        <div className="mt-5 flex md:flex sm:grid sm:grid-cols-1 gap-3 items-start justify-end">
+        <div className="mt-5 flex md:grid sm:grid lg:flex sm:grid-cols-1 gap-3 items-start justify-end">
 
           {/* مجموع قیمت - دسکتاپ */}
-          <div className="bg-white dark:bg-slate-800 p-5 mr-20 rounded-lg shadow-lg w-[400px] h-fit hidden md:block">
+          <div className="bg-white dark:bg-slate-800 p-5 mr-20 rounded-lg shadow-lg w-[400px] h-fit hidden md:hidden lg:block">
             <div className="bg-green-500 rounded-t-lg">
               <div className="flex justify-end mr-5">
                 <img src="imgs/icons/card.png" alt="" />
@@ -190,7 +190,7 @@ export default function Cart() {
           </div>
 
           {/* لیست محصولات */}
-          <div className="bg-white dark:bg-slate-800 p-5 rounded-lg shadow-lg w-[800px] md:w-[800px] sm:w-[400px] sm:-ml-2">
+          <div className="bg-white dark:bg-slate-800 p-5 rounded-lg shadow-lg w-[800px] md:w-[700px] lg:w-[800px] sm:w-[400px] sm:-ml-2">
             <div className="bg-green-500 h-14 flex items-center px-4 rounded-t-lg">
               <p className="text-3xl text-white">سبد خرید</p>
             </div>
@@ -237,10 +237,10 @@ export default function Cart() {
                 ))}
               </AnimatePresence>
             </div>
-          </div>
+          </div> 
 
           {/* مجموع قیمت - موبایل */}
-          <div className="bg-white dark:bg-slate-800 p-5 -ml-2 rounded-lg shadow-lg w-[400px] h-fit block md:hidden">
+          <div className="bg-white dark:bg-slate-800 p-5 -ml-2 rounded-lg shadow-lg w-[400px] md:w-[700px] h-fit block md:block lg:hidden">
             <div className="bg-green-500 rounded-t-lg">
               <div className="flex justify-end mr-5">
                 <img src="imgs/icons/card.png" alt="" />

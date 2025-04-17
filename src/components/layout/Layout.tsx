@@ -15,9 +15,11 @@ export default function Layout() {
       <div className="h-20 shadow-sm shadow-gray-400 dark:bg-slate-800">
         <div className="flex gap-20">
           {/* در سایز sm، سایدبار نمایش داده می‌شود */}
-          <div className="sm:block md:hidden ">
-            <Sidebar /> 
-            <div className="-mt-7  flex justify-center">  
+          <div className="sm:block md:block lg:hidden "> 
+            <div className="md:ml-80">
+            <Sidebar />  
+            </div>
+            <div className="-mt-7 sm:-mt-7   flex justify-center">  
             <Brand/> 
           </div>  
 
@@ -29,7 +31,7 @@ export default function Layout() {
           
 
           {/* در سایز md و بزرگ‌تر، کامپوننت‌های دیگر نمایش داده می‌شوند */}
-          <div className="hidden ml-24 mt-1 md:flex gap-10">
+          <div className="hidden md:hidden lg:block lg:flex ml-24 mt-1 md:flex gap-10">
             <div className="-mt-4 -ml-4">
               <LayoutAuthentication />
             </div>

@@ -91,6 +91,12 @@ export default function SliderProduct() {
         settings: {
           slidesToShow: 1,
         }
+      } , 
+      {
+        breakpoint: 782,
+        settings: {
+          slidesToShow: 2,
+        }
       }
     ]
   };

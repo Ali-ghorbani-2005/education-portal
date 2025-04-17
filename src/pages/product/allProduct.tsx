@@ -85,14 +85,18 @@ export default function AllProduct() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="product-detail gap-5 "
-      >
-        <div className='flex'>
+      >  
+      
+        <div className='flex lg:flex md:grid'> 
+        <div className='md:block sm:hidden lg:hidden mt-20'>
+            <FilterPanel  onFilterChange={handleFilterChange} />
+          </div>
           <div className="container mx-auto py-10 md:mr-28 sm:ml-4 ">
             <div className='flex justify-end '>
               <h2 className="text-3xl font-bold text-end mr-6 text-gray-700 dark:text-white">دوره ها</h2>
               <div className='bg-yellow-400 text-yellow-400 rounded-md w-5 h-5 mt-3 '>.</div>
             </div>
-            <div className="grid grid-cols-1  md:ml-5  sm:grid-cols-1 sm:gap-10 sm: md:grid-cols-3 gap-5 mt-10">
+            <div className="grid grid-cols-1  md:ml-5  sm:grid-cols-1 sm:gap-10 sm: md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
               {filteredProducts.map((product) => (
                 <div key={product.id} className="mx-2">
                   <div className="product-card bg-white dark:bg-slate-800 shadow-md w-56  md:w-72 sm:w-96  rounded-lg overflow-hidden transition-transform transform hover:scale-105">
@@ -133,7 +137,7 @@ export default function AllProduct() {
             </div>
           </div>
 
-          <div className='mt-28 mr-6'>
+          <div className='mt-28 mr-6 md:hidden lg:block'>
             <FilterPanel onFilterChange={handleFilterChange} />
           </div>
 

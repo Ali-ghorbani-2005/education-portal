@@ -133,7 +133,7 @@ export default function Login() {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col sm:flex-row items-center gap-8 w-full max-w-4xl animate-fadeUp">
-        <img src="imgs/bg/login-bg.png" className="w-60 sm:hidden md:block md:w-[500px]" alt="Login Background" />
+        <img src="imgs/bg/login-bg.png" className="w-60 sm:hidden md:block md:w-[300px] lg:w-[500px]" alt="Login Background" />
         <div className="bg-white shadow-lg rounded-lg p-6 sm:p-8 w-full max-w-sm">
           <h2 className="text-center text-2xl sm:text-3xl text-gray-800 mb-4"><Brand /></h2>
           <p className="text-center text-gray-600 mb-6">ورود به حساب کاربری</p>

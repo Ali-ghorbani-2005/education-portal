@@ -35,7 +35,75 @@ export default function FilterPanel({ onFilterChange }: FilterPanelProps) {
 
   return (
     <div>
-      {/* دکمه اول: فقط دوره‌های رایگان */}
+      {/* دکمه اول: فقط دوره‌های رایگان */} 
+      <div className="md:block sm:hidden lg:hidden md:ml-10">
+      <div className="bg-white dark:bg-slate-800 md:w-[700px]  h-20 rounded-lg flex gap-20">
+        <div className="mt-6 ml-5">
+          <button
+            onClick={() => handleFilterChange("free")}
+            className={`w-14 h-7 flex items-center p-1 rounded-full transition-all duration-300 ${
+              isFree ? "bg-green-500 dark:bg-blue-600" : "bg-gray-300 dark:bg-slate-600"
+            }`}
+          >
+            <div
+              className={`w-5 h-5 bg-white dark:bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ${
+                isFree ? "translate-x-8" : "translate-x-0"
+              }`}
+            ></div>
+          </button>
+        </div>
+
+        <div className="ml-80" >
+          <p className="text-right font-semibold py-6 text-lg dark:text-white">فقط دوره های رایگان</p>
+        </div>
+      </div>
+
+      {/* دکمه دوم: در حال پیش فروش */}
+      <div className="bg-white dark:bg-slate-800 md:w-[700px]  h-20 rounded-lg flex gap-20 mt-5">
+        <div className="mt-6 ml-5">
+          <button
+            onClick={() => handleFilterChange("sale")}
+            className={`w-14 h-7 flex items-center p-1 rounded-full transition-all duration-300 ${
+              isSale ? "bg-green-500 dark:bg-blue-600" : "bg-gray-300 dark:bg-slate-600"
+            }`}
+          >
+            <div
+              className={`w-5 h-5 bg-white dark:bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ${
+                isSale ? "translate-x-8" : "translate-x-0"
+              }`}
+            ></div>
+          </button>
+        </div>
+
+        <div className="ml-[340px]">
+          <p className="text-right font-semibold py-6 text-lg dark:text-white">در حال پیش فروش</p>
+        </div>
+      </div>
+
+      {/* دکمه سوم: تخفیف خورده */}
+      <div className="bg-white dark:bg-slate-800 md:w-[700px]  h-20 rounded-lg flex gap-20 mt-5">
+        <div className="mt-6 ml-5">
+          <button
+            onClick={() => handleFilterChange("off")}
+            className={`w-14 h-7 flex items-center p-1 rounded-full transition-all duration-300 ${
+              isOff ? "bg-green-500 dark:bg-blue-600" : "bg-gray-300 dark:bg-slate-600"
+            }`}
+          >
+            <div
+              className={`w-5 h-5 bg-white dark:bg-slate-800 rounded-full shadow-md transform transition-transform duration-300 ${
+                isOff ? "translate-x-8" : "translate-x-0"
+              }`}
+            ></div>
+          </button>
+        </div>
+
+        <div className="ml-[377px]">
+          <p className="text-right font-semibold py-6 text-lg dark:text-white">تخفیف خورده</p>
+        </div>
+      </div> 
+      </div> 
+
+      <div className="md:hidden  lg:block">
       <div className="bg-white dark:bg-slate-800 w-80 h-20 rounded-lg flex gap-20">
         <div className="mt-6 ml-5">
           <button
@@ -99,6 +167,7 @@ export default function FilterPanel({ onFilterChange }: FilterPanelProps) {
         <div>
           <p className="text-right font-semibold py-6 text-lg dark:text-white">تخفیف خورده</p>
         </div>
+      </div> 
       </div>
     </div>
   );
