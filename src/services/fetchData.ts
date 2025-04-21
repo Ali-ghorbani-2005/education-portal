@@ -29,3 +29,5 @@ export const fetchData = async (): Promise<Product[]> => {
         throw new Error("Error fetching data. Please try again.");
     }
 };
+
+// http://localhost:3001/api/products

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import SidebarTemSwicher from "../ThemeSwitcher/sidebarTemSwicher";
+import SidebarUserMenu from "./sidebarUserMenu";
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,17 +43,18 @@ export default function Sidebar() {
 
         {/* لیست منو */}
         <ul className="mt-10 text-right space-y-4"> 
+
+          <div className="ml-16">
+
+        <SidebarUserMenu/> 
+
+        </div>
+
           <Link to='/'>
           <li className="p-2 text-gray-700 dark:text-white hover:bg-gray-700 rounded">صفحه اصلی</li> 
           </Link>  
 
-          <Link to='/login'>
-          <li className="p-2 text-gray-700 dark:text-white hover:bg-gray-700 rounded">ورود</li> 
-          </Link>  
-
-          <Link to='/signUp'>
-          <li className="p-2 text-gray-700 dark:text-white hover:bg-gray-700 rounded">ثبت نام</li> 
-          </Link> 
+         
 
           <Link to='/about-us'>
           <li className="p-2 text-gray-700 dark:text-white hover:bg-gray-700 rounded">درباره ما</li> 

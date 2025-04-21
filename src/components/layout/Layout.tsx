@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import LayoutAuthentication from "./layoutAuthentication";
 import LayoutShearch from "./layoutShearch";
 import CourseNavigation from "../homeComponents/CourseNavigation";
 import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
@@ -7,6 +6,7 @@ import Footer from "../footer/footer";
 import Brand from "../homeComponents/brand";
 import CartButton from "../cartButton/cartButton";
 import Sidebar from "../sidebar/sidebar";
+import LayoutUserMenu from "./layoutUserMenu";
 
 
 export default function Layout() {
@@ -33,7 +33,7 @@ export default function Layout() {
           {/* در سایز md و بزرگ‌تر، کامپوننت‌های دیگر نمایش داده می‌شوند */}
           <div className="hidden md:hidden lg:block lg:flex ml-24 mt-1 md:flex gap-10">
             <div className="-mt-4 -ml-4">
-              <LayoutAuthentication />
+              <LayoutUserMenu/>
             </div>
 
             <div className="flex">

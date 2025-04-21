@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useUser } from "../userProfile/context";
-import AuthenticationButton from "../homeComponents/authenticationButton";
+import LayoutAuthentication from "./layoutAuthentication";
 
-export default function UserMenu() {
+export default function LayoutUserMenu() {
   const { user, setUser } = useUser();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -32,11 +32,11 @@ export default function UserMenu() {
   return (
     <div className="relative ml-4 user-menu">
       {user ? (
-        <div className="relative mt-6 ml-20">
+        <div className=" bg-gray-200 dark:bg-gray-800 w-12 h-12  rounded-full relative mt-7 ml-20  ">
           <button onClick={() => setIsOpen(!isOpen)}>
             <img
               src="imgs/icons/user.png"
-              className="w-8 cursor-pointer"
+              className="w-8 cursor-pointer ml-2 mt-1"
               alt="User Icon"
             />
           </button>
@@ -95,7 +95,7 @@ export default function UserMenu() {
           )}
         </div>
       ) : (
-        <AuthenticationButton />
+        <LayoutAuthentication />
       )}
     </div>
   );

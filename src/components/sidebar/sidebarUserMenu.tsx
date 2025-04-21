@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useUser } from "../userProfile/context";
-import AuthenticationButton from "../homeComponents/authenticationButton";
+import SiderbarAuthentication from "./siderbarAuthentication";
 
-export default function UserMenu() {
+
+export default function SidebarUserMenu() {
   const { user, setUser } = useUser();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -32,18 +33,18 @@ export default function UserMenu() {
   return (
     <div className="relative ml-4 user-menu">
       {user ? (
-        <div className="relative mt-6 ml-20">
-          <button onClick={() => setIsOpen(!isOpen)}>
+        <div className=" bg-gray-200 dark:bg-gray-800 w-12 h-12  rounded-full relative mt-7 ml-20  ">
+          <button onClick={() => setIsOpen(!isOpen)} className="flex justify-center items-center">
             <img
               src="imgs/icons/user.png"
-              className="w-8 cursor-pointer"
+              className="w-8 cursor-pointer ml-2 mt-1"
               alt="User Icon"
             />
           </button>
 
           {isOpen && (
             <div
-              className="absolute left-0 mt-2 w-72 bg-white dark:bg-slate-800 shadow-lg rounded-lg p-4 z-10 -ml-10
+              className=" left-0 mt-5 w-72 bg-white dark:bg-slate-800 shadow-lg rounded-lg p-4 z-10 -ml-56
                          animate-fade-slide"
             >
               {/* بخش بالایی: نام و تصویر کاربر */}
@@ -95,7 +96,7 @@ export default function UserMenu() {
           )}
         </div>
       ) : (
-        <AuthenticationButton />
+        <SiderbarAuthentication />
       )}
     </div>
   );
